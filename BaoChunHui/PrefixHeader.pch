@@ -1,0 +1,56 @@
+//
+//  PrefixHeader.pch
+//  BaoChunHui
+//
+//  Created by xudogn on 16/11/15.
+//  Copyright © 2016年 xudogn. All rights reserved.
+//
+
+#ifndef PrefixHeader_pch
+#define PrefixHeader_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
+
+
+
+#import <AFNetworking.h>
+#import <UIKit+AFNetworking.h>
+#import <BlocksKit.h>
+#define MAS_SHORTHAND_GLOBALS
+#import <Masonry.h>
+#import <YYKit.h>
+#import <UIImageView+WebCache.h>
+#import <MBProgressHUD.h>
+#import <iCarousel.h>
+#import <MJRefresh.h>
+#import <UIScrollView+MJRefresh.h>
+#import <UIControl+BlocksKit.h>
+
+
+
+#import "NSObject+Parse.h"
+#import "RequestPath.h"
+#import "NSString+myURL.h"
+#import "speach.h"
+#import "const.h"
+#import "userModel.h"  
+#import "makeCall.h"
+#import "UIView+HUD.h"
+#import "BCHTool.h"
+#import "ShopVCModel.h"         // 商城等VC Model   通用
+#import "UIColor+myColor.h"
+//#import "LocationManager.h"
+#import "TRFactory.h"
+
+
+
+
+
+
+
+
+
+#endif /* PrefixHeader_pch */

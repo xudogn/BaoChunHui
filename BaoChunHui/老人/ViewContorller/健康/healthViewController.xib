@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="healthViewController">
+            <connections>
+                <outlet property="view" destination="oKz-pF-ZsH" id="uu3-m5-IAe"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="oKz-pF-ZsH">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hk3-Nm-JnW">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+                    <color key="backgroundColor" red="0.18823529410000001" green="0.80784313730000001" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="187" id="yXc-lg-zbh"/>
+                    </constraints>
+                </view>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kOh-WV-XjI">
+                    <rect key="frame" x="0.0" y="199" width="187" height="105"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <state key="normal" title="  就医陪护">
+                        <color key="titleColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Q6h-6i-Svb">
+                    <rect key="frame" x="188" y="199" width="187" height="105"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <state key="normal" title="  春晖热线">
+                        <color key="titleColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="w7N-x4-WfS">
+                    <rect key="frame" x="188" y="305" width="187" height="105"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <state key="normal" title="  健康视频">
+                        <color key="titleColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="IIc-i2-gRr">
+                    <rect key="frame" x="0.0" y="305" width="187" height="105"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <state key="normal" title="  文艺视频">
+                        <color key="titleColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dGC-Ci-Ji5">
+                    <rect key="frame" x="0.0" y="411" width="187" height="105"/>
+                    <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                    <state key="normal" title="  健康广播">
+                        <color key="titleColor" red="0.1019607843" green="0.1019607843" blue="0.1019607843" alpha="1" colorSpace="calibratedRGB"/>
+                    </state>
+                </button>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthy_care" translatesAutoresizingMaskIntoConstraints="NO" id="x5o-OA-DRV">
+                    <rect key="frame" x="132" y="229" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="W4a-Qu-9gJ"/>
+                        <constraint firstAttribute="height" constant="44" id="Xyx-hA-XrL"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthy_hotline" translatesAutoresizingMaskIntoConstraints="NO" id="KhI-PY-jP2">
+                    <rect key="frame" x="319" y="229" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="5IE-95-uVu"/>
+                        <constraint firstAttribute="width" constant="44" id="9Ja-uN-kOy"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthy_wenyi" translatesAutoresizingMaskIntoConstraints="NO" id="vor-Cn-jTk">
+                    <rect key="frame" x="132" y="335.5" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="koT-bj-10y"/>
+                        <constraint firstAttribute="height" constant="44" id="pjy-LU-RDz"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthy_video" translatesAutoresizingMaskIntoConstraints="NO" id="2lS-RH-RSX">
+                    <rect key="frame" x="319" y="335.5" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="44" id="2pN-IT-Em8"/>
+                        <constraint firstAttribute="height" constant="44" id="TbJ-Zd-hMB"/>
+                    </constraints>
+                </imageView>
+                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthy_radio" translatesAutoresizingMaskIntoConstraints="NO" id="boD-7q-P2D">
+                    <rect key="frame" x="132" y="441" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="Hhn-kI-JOo"/>
+                        <constraint firstAttribute="width" constant="44" id="NR7-pe-iPe"/>
+                    </constraints>
+                </imageView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S5Q-JY-Ihi">
+                    <rect key="frame" x="188" y="411" width="187" height="105"/>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="w7N-x4-WfS" firstAttribute="top" secondItem="Q6h-6i-Svb" secondAttribute="bottom" constant="1" id="30Y-0n-9lj"/>
+                <constraint firstItem="Q6h-6i-Svb" firstAttribute="leading" secondItem="x5o-OA-DRV" secondAttribute="trailing" constant="12" id="3Co-Vr-gX6"/>
+                <constraint firstItem="w7N-x4-WfS" firstAttribute="height" secondItem="IIc-i2-gRr" secondAttribute="height" id="7U8-CH-WNo"/>
+                <constraint firstItem="boD-7q-P2D" firstAttribute="centerY" secondItem="dGC-Ci-Ji5" secondAttribute="centerY" id="8IT-xK-e5s"/>
+                <constraint firstItem="kOh-WV-XjI" firstAttribute="leading" secondItem="oKz-pF-ZsH" secondAttribute="leading" id="DrS-OJ-bkK"/>
+                <constraint firstItem="Q6h-6i-Svb" firstAttribute="width" secondItem="kOh-WV-XjI" secondAttribute="width" id="Ggk-Q7-OoB"/>
+                <constraint firstItem="Q6h-6i-Svb" firstAttribute="top" secondItem="Hk3-Nm-JnW" secondAttribute="bottom" constant="12" id="H7g-3e-6Cq"/>
+                <constraint firstAttribute="trailing" secondItem="Hk3-Nm-JnW" secondAttribute="trailing" id="HEe-UA-Z2A"/>
+                <constraint firstItem="kOh-WV-XjI" firstAttribute="height" secondItem="oKz-pF-ZsH" secondAttribute="height" multiplier="0.157" id="HNN-JI-c7Y"/>
+                <constraint firstAttribute="trailing" secondItem="KhI-PY-jP2" secondAttribute="trailing" constant="12" id="I7f-G3-DlY"/>
+                <constraint firstAttribute="trailing" secondItem="Q6h-6i-Svb" secondAttribute="trailing" id="Jch-Bx-GvL"/>
+                <constraint firstItem="kOh-WV-XjI" firstAttribute="top" secondItem="Hk3-Nm-JnW" secondAttribute="bottom" constant="12" id="PKr-tJ-JaN"/>
+                <constraint firstAttribute="trailing" secondItem="2lS-RH-RSX" secondAttribute="trailing" constant="12" id="S5M-ID-CR6"/>
+                <constraint firstItem="Q6h-6i-Svb" firstAttribute="leading" secondItem="kOh-WV-XjI" secondAttribute="trailing" constant="1" id="ThT-il-40R"/>
+                <constraint firstItem="x5o-OA-DRV" firstAttribute="centerY" secondItem="kOh-WV-XjI" secondAttribute="centerY" id="Vaz-qo-r5F"/>
+                <constraint firstItem="Hk3-Nm-JnW" firstAttribute="leading" secondItem="oKz-pF-ZsH" secondAttribute="leading" id="Xso-sE-mZe"/>
+                <constraint firstItem="dGC-Ci-Ji5" firstAttribute="height" secondItem="kOh-WV-XjI" secondAttribute="height" id="Y8g-TA-i4O"/>
+                <constraint firstItem="Q6h-6i-Svb" firstAttribute="height" secondItem="kOh-WV-XjI" secondAttribute="height" id="ZBe-Xi-8R5"/>
+                <constraint firstAttribute="trailing" secondItem="S5Q-JY-Ihi" secondAttribute="trailing" id="Ztm-I8-M4A"/>
+                <constraint firstItem="Hk3-Nm-JnW" firstAttribute="top" secondItem="oKz-pF-ZsH" secondAttribute="top" id="bDn-ic-CFE"/>
+                <constraint firstItem="vor-Cn-jTk" firstAttribute="centerY" secondItem="IIc-i2-gRr" secondAttribute="centerY" id="c2l-fs-0hv"/>
+                <constraint firstItem="dGC-Ci-Ji5" firstAttribute="leading" secondItem="oKz-pF-ZsH" secondAttribute="leading" id="c31-fg-IsY"/>
+                <constraint firstItem="dGC-Ci-Ji5" firstAttribute="width" secondItem="kOh-WV-XjI" secondAttribute="width" id="cgQ-LL-oI5"/>
+                <constraint firstItem="S5Q-JY-Ihi" firstAttribute="leading" secondItem="boD-7q-P2D" secondAttribute="trailing" constant="12" id="co6-Yi-crm"/>
+                <constraint firstItem="S5Q-JY-Ihi" firstAttribute="top" secondItem="w7N-x4-WfS" secondAttribute="bottom" constant="1" id="eax-uX-iq3"/>
+                <constraint firstItem="IIc-i2-gRr" firstAttribute="leading" secondItem="oKz-pF-ZsH" secondAttribute="leading" id="fgu-jD-PVp"/>
+                <constraint firstItem="dGC-Ci-Ji5" firstAttribute="top" secondItem="IIc-i2-gRr" secondAttribute="bottom" constant="1" id="jjl-dQ-NMw"/>
+                <constraint firstItem="IIc-i2-gRr" firstAttribute="height" secondItem="kOh-WV-XjI" secondAttribute="height" id="kZQ-tz-6vM"/>
+                <constraint firstItem="w7N-x4-WfS" firstAttribute="leading" secondItem="vor-Cn-jTk" secondAttribute="trailing" constant="12" id="l4U-F3-l19"/>
+                <constraint firstItem="w7N-x4-WfS" firstAttribute="leading" secondItem="IIc-i2-gRr" secondAttribute="trailing" constant="1" id="lKr-EI-Hsq"/>
+                <constraint firstAttribute="trailing" secondItem="w7N-x4-WfS" secondAttribute="trailing" id="mdU-lj-VUb"/>
+                <constraint firstItem="S5Q-JY-Ihi" firstAttribute="leading" secondItem="dGC-Ci-Ji5" secondAttribute="trailing" constant="1" id="nKe-ES-Cpe"/>
+                <constraint firstItem="IIc-i2-gRr" firstAttribute="top" secondItem="kOh-WV-XjI" secondAttribute="bottom" constant="1" id="nl0-IE-sb2"/>
+                <constraint firstItem="S5Q-JY-Ihi" firstAttribute="height" secondItem="dGC-Ci-Ji5" secondAttribute="height" id="nst-ia-Wmq"/>
+                <constraint firstItem="IIc-i2-gRr" firstAttribute="width" secondItem="kOh-WV-XjI" secondAttribute="width" id="pNH-mg-lhh"/>
+                <constraint firstItem="KhI-PY-jP2" firstAttribute="centerY" secondItem="Q6h-6i-Svb" secondAttribute="centerY" id="rDE-tT-rNO"/>
+                <constraint firstItem="2lS-RH-RSX" firstAttribute="centerY" secondItem="w7N-x4-WfS" secondAttribute="centerY" id="s21-2s-XC5"/>
+            </constraints>
+            <point key="canvasLocation" x="-306" y="-350"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="healthy_care" width="40" height="40"/>
+        <image name="healthy_hotline" width="40" height="40"/>
+        <image name="healthy_radio" width="40" height="40"/>
+        <image name="healthy_video" width="40" height="40"/>
+        <image name="healthy_wenyi" width="40" height="40"/>
+    </resources>
+</document>
