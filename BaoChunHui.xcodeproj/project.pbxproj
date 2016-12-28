@@ -78,6 +78,7 @@
 		E445F3201DF7FE7D00377343 /* SearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E445F31F1DF7FE7D00377343 /* SearchModel.m */; };
 		E449324D1DFA94F70082DEC7 /* SelectModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E449324C1DFA94F70082DEC7 /* SelectModel.m */; };
 		E44932501DFA96BA0082DEC7 /* SubmitView.m in Sources */ = {isa = PBXBuildFile; fileRef = E449324F1DFA96BA0082DEC7 /* SubmitView.m */; };
+		E449C4431E1387E400443E5D /* Add_EditShouHuoDiZhiVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E449C4421E1387E400443E5D /* Add_EditShouHuoDiZhiVC.m */; };
 		E44ACBCB1E0650D000426D8D /* zhaoHuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E44ACB911E0650D000426D8D /* zhaoHuViewController.m */; };
 		E44ACBCC1E0650D000426D8D /* zhaoHuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44ACB921E0650D000426D8D /* zhaoHuViewController.xib */; };
 		E44ACBCD1E0650D000426D8D /* peiHuCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E44ACB961E0650D000426D8D /* peiHuCollectionViewController.m */; };
@@ -308,6 +309,8 @@
 		E449324C1DFA94F70082DEC7 /* SelectModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectModel.m; sourceTree = "<group>"; };
 		E449324E1DFA96BA0082DEC7 /* SubmitView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SubmitView.h; sourceTree = "<group>"; };
 		E449324F1DFA96BA0082DEC7 /* SubmitView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SubmitView.m; sourceTree = "<group>"; };
+		E449C4411E1387E400443E5D /* Add_EditShouHuoDiZhiVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Add_EditShouHuoDiZhiVC.h; sourceTree = "<group>"; };
+		E449C4421E1387E400443E5D /* Add_EditShouHuoDiZhiVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Add_EditShouHuoDiZhiVC.m; sourceTree = "<group>"; };
 		E44ACB901E0650D000426D8D /* zhaoHuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhaoHuViewController.h; sourceTree = "<group>"; };
 		E44ACB911E0650D000426D8D /* zhaoHuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhaoHuViewController.m; sourceTree = "<group>"; };
 		E44ACB921E0650D000426D8D /* zhaoHuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = zhaoHuViewController.xib; sourceTree = "<group>"; };
@@ -1195,6 +1198,8 @@
 				E4548A961E057D3A00878E23 /* DeliveryAddressCell.h */,
 				E4548A971E057D3A00878E23 /* DeliveryAddressCell.m */,
 				E4548A981E057D3A00878E23 /* DeliveryAddressCell.xib */,
+				E449C4411E1387E400443E5D /* Add_EditShouHuoDiZhiVC.h */,
+				E449C4421E1387E400443E5D /* Add_EditShouHuoDiZhiVC.m */,
 			);
 			path = "添加收货地址VC";
 			sourceTree = "<group>";
@@ -1847,6 +1852,7 @@
 				E4127AA91DF5440100C20658 /* buyFoodTableViewController.m in Sources */,
 				E44ACBD01E0650D000426D8D /* huLiDingDanViewController.m in Sources */,
 				E44BDB4E1DFEC0DA0027DEED /* GuiGeCell.m in Sources */,
+				E449C4431E1387E400443E5D /* Add_EditShouHuoDiZhiVC.m in Sources */,
 				E4127AA21DF5440100C20658 /* shopPingJiaCell.m in Sources */,
 				E4AE1BCB1DE3E259002795BD /* LiveViewController.m in Sources */,
 				5D8FC8171E0B7187001E196F /* SCAreaPickerView.m in Sources */,

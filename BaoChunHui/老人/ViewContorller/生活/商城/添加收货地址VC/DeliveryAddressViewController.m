@@ -20,7 +20,7 @@
 
 
 @end
-
+//  管理收货地址页面
 @implementation DeliveryAddressViewController
 
 - (void)viewDidLoad {
