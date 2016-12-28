@@ -122,21 +122,21 @@
     }
     return _timeLb1;
 }
-//- (UILabel *)phoneLb1 {
-//    if (!_phoneLb1) {
-//        _phoneLb1 = [UILabel new];
-//        [_contentView addSubview:_phoneLb1];
-//        [_phoneLb1 mas_makeConstraints:^(MASConstraintMaker *make) {
-//            make.left.equalTo(_imageView1.mas_right).equalTo(10);
-//            make.right.equalTo(0);
-//            make.top.equalTo(_nameLb1.mas_bottom).equalTo(12);
-//            make.height.equalTo(28);
-//        }];
-//        _phoneLb1.text = @"15811228989";
-//        _phoneLb1.font = [UIFont systemFontOfSize:28];
-//    }
-//    return _phoneLb1;
-//}
+- (UILabel *)phoneLb1 {
+    if (!_phoneLb1) {
+        _phoneLb1 = [UILabel new];
+        [_contentView addSubview:_phoneLb1];
+        [_phoneLb1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(_imageView1.mas_right).equalTo(10);
+            make.right.equalTo(0);
+            make.top.equalTo(_nameLb1.mas_bottom).equalTo(12);
+            make.height.equalTo(28);
+        }];
+        _phoneLb1.text = @"15811228989";
+        _phoneLb1.font = [UIFont systemFontOfSize:28];
+    }
+    return _phoneLb1;
+}
 
 - (void)showView:(UIView *)view {
     if (!view) {
