@@ -14,6 +14,8 @@
 
 @property(nonatomic, strong) UIButton *bottomBtn;
 
+@property(nonatomic) BOOL isEdit;
+
 
 @end
 
@@ -44,6 +46,26 @@
 
 
 
+
+
+
+
+
+
+
+#pragma life cycle
+
+- (instancetype)initWithVCtype:(VCtype)type{
+    self = [super init];
+    if (self) {
+        if (type == Edit) {
+            self.isEdit = YES;
+        }else{
+            self.isEdit = NO;
+        }
+    }
+    return self;
+}
 
 
 
@@ -101,15 +123,5 @@
     NSLog(@"添加收货地址 内存警告");
 }
 @end
-
-
-
-
-
-
-
-
-
-
 
 
