@@ -62,6 +62,7 @@
     [self.tableView registerNib:nib forCellReuseIdentifier:@"guige"];
     self.tableView.tableFooterView = [UIView new];
     self.tableView.separatorStyle= UITableViewCellSeparatorStyleSingleLine;
+    [TRFactory addBackItemForVC:self];
 }
 
 
@@ -82,7 +83,16 @@
         AddressCell *cell = [tableView dequeueReusableCellWithIdentifier:@"address" forIndexPath:indexPath];
         cell.name.text = [userModel defaultsUserModel].name;
         cell.teleNum.text = [NSString stringWithFormat:@"%ld", [userModel defaultsUserModel].telephont_num];
-        
+        if (self.address_arr.count) {
+            addressModel *model = self.address_arr[0];
+            cell.name.text = model.consignee;
+            cell.teleNum.text = @(model.mobile).stringValue;
+            cell.address.text = [NSString stringWithFormat:@"%@%@", model.detailAddress, model.address];
+        } else {
+            cell.name.text = nil;
+            cell.teleNum.text = nil;
+            cell.address.text = @"添加收货地址";
+        }
         
         return cell;
         

@@ -129,7 +129,7 @@
     vc.view.backgroundColor = [UIColor whiteColor];
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
-    
+    [TRFactory addBackItemForVC:self];
 }
 
 - (UIView *)tableView:(UITableView *)tableView viewForHeaderInSection:(NSInteger)section{

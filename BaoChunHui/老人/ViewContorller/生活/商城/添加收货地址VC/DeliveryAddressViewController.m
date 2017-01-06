@@ -39,6 +39,7 @@
     
     UINib *nib = [UINib nibWithNibName:@"DeliveryAddressCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"cell"];
+    [TRFactory addBackItemForVC:self];
 }
 
 

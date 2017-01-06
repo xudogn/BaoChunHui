@@ -96,12 +96,16 @@ typedef NS_ENUM(NSUInteger, check_state) {
 @property(nonatomic, strong) NSString *consignee;// name
 @property(nonatomic, assign) NSInteger province;
 @property(nonatomic, assign) NSInteger city;
+@property(nonatomic, assign) NSInteger town;
+@property(nonatomic, assign) NSInteger county;
 @property(nonatomic, assign) NSInteger district;
 @property(nonatomic, strong) NSString *address;
 @property(nonatomic, assign) NSInteger mobile;
 @property(nonatomic, strong) NSString *provice_name;
 @property(nonatomic, strong) NSString *city_name;
 @property(nonatomic, strong) NSString *county_name;
+@property(nonatomic, strong) NSString *town_name;
+
 @property(nonatomic, strong) NSString *detailAddress;
 
 @end

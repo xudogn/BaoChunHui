@@ -47,6 +47,7 @@
     
     self.tableView.tableFooterView = [UIView new];
     self.tableView.separatorStyle = UITableViewCellSeparatorStyleSingleLine;
+    [TRFactory addBackItemForVC:self];
 }
 
 - (void)didReceiveMemoryWarning {

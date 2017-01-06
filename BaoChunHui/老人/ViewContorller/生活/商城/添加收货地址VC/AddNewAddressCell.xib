@@ -24,7 +24,7 @@
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="翠湖路9号翠湖敬老院" translatesAutoresizingMaskIntoConstraints="NO" id="fGV-qq-V8k">
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fGV-qq-V8k">
                         <rect key="frame" x="137.5" y="12" width="152.5" height="79.5"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <fontDescription key="fontDescription" type="system" pointSize="25"/>

@@ -144,38 +144,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BaoChunHui/&#x8001;&#x4eba;/ViewContorller/&#x751f;&#x6d3b;/&#x5546;&#x57ce;/&#x6dfb;&#x52a0;&#x6536;&#x8d27;&#x5730;&#x5740;VC/DeliveryAddressViewController.m"
-            timestampString = "505289251.606833"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BaoChunHui/&#x8001;&#x4eba;/ViewContorller/&#x751f;&#x6d3b;/&#x5546;&#x57ce;/&#x6dfb;&#x52a0;&#x6536;&#x8d27;&#x5730;&#x5740;VC/DeliveryAddressViewController.m"
-            timestampString = "505289253.8124"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "32"
-            endingLineNumber = "32"
-            landmarkName = "-viewDidLoad"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "BaoChunHui/NetManager/BaseNetworking.m"
             timestampString = "505362055.748529"
             startingColumnNumber = "9223372036854775807"
