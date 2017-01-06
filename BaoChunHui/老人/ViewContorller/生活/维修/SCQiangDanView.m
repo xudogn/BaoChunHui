@@ -113,7 +113,7 @@
         [_contentView addSubview:_timeLb1];
         [_timeLb1 mas_makeConstraints:^(MASConstraintMaker *make) {
             make.right.equalTo(-15);
-            make.left.equalTo(_nameLb1.mas_right).equalTo(35);
+            make.left.equalTo( _nameLb1.mas_right).equalTo(35);
             make.top.equalTo(_nameLb1.mas_top);
             make.height.equalTo(28);
         }];

@@ -28,15 +28,6 @@ static userModel *users = nil;
 
 
 
-- (NSMutableArray<addressModel *> *)address_arr{
-    if (!_address_arr) {
-        _address_arr = [[NSMutableArray<addressModel *> alloc] init];
-        
-    }
-    return _address_arr;
-}
-
-
 -(NSMutableArray<goodsModel *> *)gouWuChe_dianCan_arr{
     if (!_gouWuChe_dianCan_arr) {
         _gouWuChe_dianCan_arr = [[NSMutableArray<goodsModel *> alloc] init];
@@ -68,6 +59,10 @@ static userModel *users = nil;
 @end
 
 
+@implementation addressModel
 
+
+
+@end
 
 

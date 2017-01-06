@@ -12,7 +12,7 @@
 #import "SubmitView.h"
 #import "shangChengCell.h"
 #import "goodsWithGuigeCell.h"
-
+#import "Add_EditShouHuoDiZhiVCViewController.h"
 
 
 @interface ConfirmOrderViewController ()<UITableViewDelegate, UITableViewDataSource>
@@ -23,6 +23,7 @@
 
 @property(nonatomic, strong) NSMutableArray<goodsModel *> *datalist;
 
+@property(nonatomic, strong) NSMutableArray *address_arr;
 
 
 
@@ -34,6 +35,23 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view.
     
+    NSDictionary *dic = @{@"uid": [[NSUserDefaults standardUserDefaults] valueForKey:@"user_id"]};
+    [BaseNetworking GET:@"/baochunhui/public/index.php/Index/User/getUserAdderss" parameters:dic completionHandler:^(id responseObj, NSError *error) {
+        NSLog(@"%@", responseObj);
+        if (!error) {
+            NSMutableArray<addressModel *> *array = [addressModel parse:responseObj];
+            for (int i = 0; i < array.count; i++) {
+                addressModel *model = array[i];
+                if (model.isDefault) {
+                    [array removeObject:model];
+                    [array insertObject:model atIndex:0];
+                }
+            }
+            self.address_arr = array;
+        } else {
+            NSLog(@"网络获取收货地址失败");
+        }
+    }];
     
     
     [self reloadSubViewPriceLabel];
@@ -58,13 +76,14 @@
 }
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
-    if (indexPath.row == 0) {//   选择地址 cell
+    //   选择地址 cell
+    if (indexPath.row == 0) {
         
         AddressCell *cell = [tableView dequeueReusableCellWithIdentifier:@"address" forIndexPath:indexPath];
         cell.name.text = [userModel defaultsUserModel].name;
         cell.teleNum.text = [NSString stringWithFormat:@"%ld", [userModel defaultsUserModel].telephont_num];
-#warning 收货地址 逻辑待处理
-        cell.address.text = [userModel defaultsUserModel].address_arr.count ? [userModel defaultsUserModel].address_arr[0] : @"请添加收货地址";
+        
+        
         return cell;
         
         
@@ -179,12 +198,9 @@
     //NSLog(@"dian ji %ld hang", indexPath.row);
     if (indexPath.row == 0) {
         //  跳转到 添加收货地址 VC
+        Add_EditShouHuoDiZhiVCViewController *vc = [[Add_EditShouHuoDiZhiVCViewController alloc] initWithAddNewAddress];
+        [self.navigationController pushViewController:vc animated:YES];
         
-        
-        
-        
-        
-        NSLog(@"增加 收货地址按钮按下");
     }
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
     

@@ -8,7 +8,7 @@
 
 #import "DeliveryAddressViewController.h"
 #import "DeliveryAddressCell.h"
-
+#import "Add_EditShouHuoDiZhiVCViewController.h"
 
 @interface DeliveryAddressViewController ()<UITableViewDelegate, UITableViewDataSource>
 
@@ -25,9 +25,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    //网络请求收货地址， 默认收货地址
+    NSDictionary *dic = @{@"user_id": [[NSUserDefaults standardUserDefaults] valueForKey:@"user_id"]};
+    [BaseNetworking GET:@"/baochunhui/public/index.php/Index/User/getUserAdderss" parameters:dic completionHandler:^(id responseObj, NSError *error) {
+        if (!error) {
+            NSMutableArray<addressModel *> *array = [addressModel parse:responseObj];
+            self.address_arr = array;
+        } else {
+            NSLog(@"网络获取收货地址失败");
+        }
+    }];
     
     
-    self.address_arr = [userModel defaultsUserModel].address_arr;
     UINib *nib = [UINib nibWithNibName:@"DeliveryAddressCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"cell"];
 }
@@ -43,8 +52,8 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     DeliveryAddressCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    cell.naneL.text = self.address_arr[indexPath.row].name;
-    cell.teltNumL.text = [NSString stringWithFormat:@"%ld",   self.address_arr[indexPath.row].teleNum];
+    cell.naneL.text = self.address_arr[indexPath.row].consignee;
+    cell.teltNumL.text = [NSString stringWithFormat:@"%ld",   self.address_arr[indexPath.row].mobile];
     cell.addressL.text = self.address_arr[indexPath.row].address;
     // 是默认地址
     [cell.flagBtn setBackgroundImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
@@ -63,7 +72,8 @@
     };
     cell.editBtnClicked = ^(){
         // 跳转编辑 收货地址Vc
-        
+        Add_EditShouHuoDiZhiVCViewController *vc = [[Add_EditShouHuoDiZhiVCViewController alloc] initWithAddressModel:self.address_arr[indexPath.row]];
+        [self.navigationController pushViewController:vc animated:YES];
     };
     return cell;
 }
@@ -100,6 +110,8 @@
 
 - (void)addNewAddress{
     // 跳转到添加新地址页面
+    Add_EditShouHuoDiZhiVCViewController *vc = [[Add_EditShouHuoDiZhiVCViewController alloc] initWithAddNewAddress];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (UIButton *)addAddress{

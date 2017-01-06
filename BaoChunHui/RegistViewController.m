@@ -43,9 +43,9 @@
     NSDictionary *parameter = @{@"phone":self.teleNumber.text};
     [manager POST:@"http://192.168.1.106/baochunhui/public/index.php/Index/index/securityCode" parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         NSLog(@"Send code sucess.");
-        NSDictionary *dic = responseObject;
+        NSString *flag = [NSString stringWithFormat:@"%@", responseObject[@"flag"]];
         
-        if (dic[@"flag"] == 0) {
+        if (flag.intValue == 0) {
             UIAlertController *alertC = [UIAlertController alertControllerWithTitle:@"提示" message:@"您的手机号已注册!" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *act = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
                 [alertC dismissViewControllerAnimated:YES completion:nil];
@@ -80,15 +80,38 @@
     manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html", @"application/json", @"text/json", @"text/javascript", @"text/plain", nil];
     [manager POST:@"http://192.168.1.106/baochunhui/public/index.php/Index/index/register" parameters:parameter progress:nil success:^(NSURLSessionDataTask * _Nonnull task, id  _Nullable responseObject) {
         
-        NSLog(@"Register request sucess.");
-        NSDictionary *dic = responseObject;
-        NSInteger flag = (long)dic[@"flag"];
-        switch (flag) {
+        NSDictionary *dic = (NSDictionary *)responseObject;
+        
+        NSString *flag =  [NSString stringWithFormat:@"%@", responseObject[@"flag"]];
+        NSLog(@"flag = %@", flag);
+        NSInteger f = [flag intValue];
+        switch (f) {
             case 1:// 注册成功
             {
                 //  进入相应的界面，同登录/切换 逻辑
-                
-                
+                [[NSUserDefaults standardUserDefaults] setValue:dic[@"uid"] forKey:@"user_id"];
+                [[NSUserDefaults standardUserDefaults] setValue:dic[@"token"] forKey:@"token"];
+                NSString *str = [[NSUserDefaults standardUserDefaults] valueForKey:@"user_id"];
+                NSLog(@"%@", str);
+                switch (self.module) {
+                    case PartOfOldPeople:
+#warning login
+                        break;
+                    case PartOfFamily:
+                        
+                        break;
+                    case PartOfService:
+                        
+                        break;
+                    case PartOfCareStation:
+                        
+                        break;
+                    case PartOf5:
+                        
+                        break;
+                    default:
+                        break;
+                }
             }
                 break;
             case 2:// 验证码错误

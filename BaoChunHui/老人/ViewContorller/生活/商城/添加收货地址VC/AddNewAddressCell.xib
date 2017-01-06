@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" rowHeight="104" id="KGk-i7-Jjw" customClass="AddNewAddressCell">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="104"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="详细地址" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O8J-s8-lat">
+                        <rect key="frame" x="12" y="12" width="101.5" height="30"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="翠湖路9号翠湖敬老院" translatesAutoresizingMaskIntoConstraints="NO" id="fGV-qq-V8k">
+                        <rect key="frame" x="137.5" y="12" width="152.5" height="79.5"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="25"/>
+                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                    </textView>
+                    <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="con_more" translatesAutoresizingMaskIntoConstraints="NO" id="S39-ZL-vGW">
+                        <rect key="frame" x="298" y="40.5" width="10" height="23"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="23" id="G9m-Hc-DAG"/>
+                            <constraint firstAttribute="width" constant="10" id="IyH-Qs-N0T"/>
+                        </constraints>
+                    </imageView>
+                    <switch hidden="YES" opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" contentHorizontalAlignment="center" contentVerticalAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="ki7-Lf-oNd">
+                        <rect key="frame" x="259" y="37" width="51" height="31"/>
+                    </switch>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="fGV-qq-V8k" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="32y-Jl-Tpc"/>
+                    <constraint firstItem="fGV-qq-V8k" firstAttribute="leading" secondItem="O8J-s8-lat" secondAttribute="trailing" constant="24" id="9qT-BU-Ssk"/>
+                    <constraint firstAttribute="trailing" secondItem="fGV-qq-V8k" secondAttribute="trailing" constant="30" id="KpJ-8f-LPT"/>
+                    <constraint firstItem="ki7-Lf-oNd" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="U0Q-ZV-bM3"/>
+                    <constraint firstItem="S39-ZL-vGW" firstAttribute="centerY" secondItem="H2p-sc-9uM" secondAttribute="centerY" id="YHk-W4-4PI"/>
+                    <constraint firstItem="O8J-s8-lat" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="12" id="bda-Ib-hyZ"/>
+                    <constraint firstAttribute="trailing" secondItem="S39-ZL-vGW" secondAttribute="trailing" constant="12" id="ffO-fq-27J"/>
+                    <constraint firstItem="O8J-s8-lat" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="12" id="jZw-C6-wee"/>
+                    <constraint firstAttribute="trailing" secondItem="ki7-Lf-oNd" secondAttribute="trailing" constant="12" id="lLM-tb-DaQ"/>
+                    <constraint firstAttribute="bottom" secondItem="fGV-qq-V8k" secondAttribute="bottom" constant="12" id="rDl-kl-m2Y"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="moreImgV" destination="S39-ZL-vGW" id="4zl-d7-HbJ"/>
+                <outlet property="setDefault" destination="ki7-Lf-oNd" id="Zdq-Eb-mIf"/>
+                <outlet property="textV" destination="fGV-qq-V8k" id="vaF-pT-Lcn"/>
+                <outlet property="titleLb" destination="O8J-s8-lat" id="BhA-LG-O9D"/>
+            </connections>
+            <point key="canvasLocation" x="49" y="-113"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="con_more" width="13" height="24"/>
+    </resources>
+</document>

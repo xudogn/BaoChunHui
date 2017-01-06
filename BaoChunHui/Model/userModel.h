@@ -37,8 +37,6 @@ typedef NS_ENUM(NSUInteger, check_state) {
 
 @property(nonatomic, strong) NSString *detail_street;
 
-@property(nonatomic, strong) NSMutableArray<addressModel *> *address_arr;
-
 @property(nonatomic, strong) NSString *domiciled;
 
 
@@ -88,13 +86,23 @@ typedef NS_ENUM(NSUInteger, check_state) {
 @interface addressModel : NSObject
 
 
-@property(nonatomic, strong) NSString *name;
 
-@property(nonatomic) NSInteger teleNum;
-
-@property(nonatomic, strong) NSString *address;
 
 @property(nonatomic, assign) BOOL isDefault;
+
+@property(nonatomic, assign) NSInteger address_id;
+@property(nonatomic, strong) NSString *address_name;
+@property(nonatomic, assign) NSInteger user_id;
+@property(nonatomic, strong) NSString *consignee;// name
+@property(nonatomic, assign) NSInteger province;
+@property(nonatomic, assign) NSInteger city;
+@property(nonatomic, assign) NSInteger district;
+@property(nonatomic, strong) NSString *address;
+@property(nonatomic, assign) NSInteger mobile;
+@property(nonatomic, strong) NSString *provice_name;
+@property(nonatomic, strong) NSString *city_name;
+@property(nonatomic, strong) NSString *county_name;
+@property(nonatomic, strong) NSString *detailAddress;
 
 @end
 

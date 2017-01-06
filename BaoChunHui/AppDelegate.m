@@ -47,14 +47,14 @@
     if (![version isEqualToString:readVersion]) {
         [self welcomeWindow];
     }
-    if (![version isEqualToString:readVersion]) {// 去掉  ！  恢复正常逻辑
+    if ([version isEqualToString:readVersion]) {
         [self adWindow];
     }
     
     
     //[self netTest];
     
-    [[userModel defaultsUserModel] setValue:@"000" forKey:@"user_id"];
+    
     
     for (int i = 0; i <6; i++) {
         goodsModel *model = [[goodsModel alloc] init];
