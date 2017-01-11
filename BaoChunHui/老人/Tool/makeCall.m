@@ -11,20 +11,15 @@
 @implementation makeCall
 
 
-+(UIWebView *)callPhoneNumber:(NSString *)phoneNum{
++(void)callPhoneNumber:(NSString *)phoneNum toView:(UIView *)view{
     NSString *teleNum = [NSString stringWithFormat:@"tel://%@", phoneNum];
-    
     NSURL *url = [NSURL URLWithString:teleNum];
     // zhijie bo da
     //[[UIApplication sharedApplication] openURL:url];
-    
     // 打完电话可回来~~~~~~
     UIWebView *webView = [[UIWebView alloc] init];
-    
-    
     [webView loadRequest:[NSURLRequest requestWithURL:url]];
-    
-    return webView;
+    [view addSubview:webView];
 }
 
 @end

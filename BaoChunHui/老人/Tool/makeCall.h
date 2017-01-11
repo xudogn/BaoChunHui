@@ -15,7 +15,7 @@
 //[self.view addSubview [makeCall callPhoneNumber:@"10086"]];
 
 
-+ (UIWebView *)callPhoneNumber:(NSString *)phoneNum;
++ (void)callPhoneNumber:(NSString *)phoneNum toView:(UIView *)view;
 
 
 @end

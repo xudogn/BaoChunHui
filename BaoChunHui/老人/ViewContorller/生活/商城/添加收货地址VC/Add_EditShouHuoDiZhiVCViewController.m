@@ -113,6 +113,24 @@
             self.pickerV.frame = CGRectMake(0, kMainScreenHeight-350-49, kMainScreenWidth, 350);
         }];
     }
+    if (indexPath.row == 5) {
+        // 删除收货地址
+        UIAlertController *alertV = [UIAlertController alertControllerWithTitle:@"提示" message:@"删除地址信息？" preferredStyle:UIAlertControllerStyleAlert];
+        UIAlertAction *act = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+            [BaseNetworking POST:@"/baochunhui/public/index.php/Index/User/delAddress" parameters:@{@"address_id": @(self.addressModel.address_id)} completionHandler:^(id responseObj, NSError *error) {
+                if (!error) {
+                    [self.navigationController popViewControllerAnimated:YES];
+                }
+            }];
+        }];
+        UIAlertAction *act1 = [UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleCancel handler:^(UIAlertAction * _Nonnull action) {
+            return;
+        }];
+        [alertV addAction:act];
+        [alertV addAction:act1];
+        [self presentViewController:alertV animated:YES completion:nil];
+        
+    }
 }
 
 
@@ -131,7 +149,23 @@
 }
 
 - (void)textViewDidEndEditing:(UITextView *)textView{
-    NSLog(@"did end editing");
+    switch (textView.tag) {
+        case 100:
+            self.addressModel.consignee = textView.text;
+            break;
+        case 101:
+            self.addressModel.mobile = textView.text.integerValue;
+            break;
+        case 102:
+            
+            break;
+        case 103:
+            self.addressModel.address = textView.text;
+            break;
+            
+        default:
+            break;
+    }
 }
 
 
@@ -150,7 +184,7 @@
 #pragma UIPickerViewDelegate
 
 - (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component{
-    
+    NSLog(@"select row: %ld", row);
 }
 
 - (NSString *)pickerView:(UIPickerView *)pickerView titleForRow:(NSInteger)row forComponent:(NSInteger)component{
@@ -166,28 +200,42 @@
     
 }
 - (void)quedBtnClicked{
+    
     NSArray *array = @[@"/baochunhui/public/index.php/Index/index/getProvice", @"/baochunhui/public/index.php/Index/index/getCity", @"/baochunhui/public/index.php/Index/index/getCounty", @"/baochunhui/public/index.php/Index/index/getTown"];
     NSArray *array_id = @[@"provice_id", @"city_id", @"county_id", @"town_id"];
     NSArray *array_name = @[@"provice_name", @"city_name", @"county_name", @"town_name"];
     NSInteger row = [self.p selectedRowInComponent:0];
-    switch (self.flag) {
-        case 0:
+    switch (self.flag-1) {
+        case 0:{
             self.addressModel.provice_name = self.pickArr[row][@"name"];
-            self.addressModel.province = ((NSString *)self.pickArr[row][@"id"]).intValue;
+            NSLog(@"%@", self.pickArr[row][@"id"]);
+            NSString *str = [[NSString stringWithFormat:@"%@", self.pickArr[row][@"id"]] copy];
+            self.addressModel.province = [str integerValue];
             break;
-        case 1:
+        }
+        case 1:{
             self.addressModel.city_name = self.pickArr[row][@"name"];
-            self.addressModel.city = ((NSString *)self.pickArr[row][@"id"]).intValue;
+            NSLog(@"%@", self.pickArr[row][@"id"]);
+            NSString *str = [NSString stringWithFormat:@"%@", self.pickArr[row][@"id"]];
+            NSString *string = [str copy];
+            self.addressModel.city = [string integerValue];
+            NSLog(@"%ld", self.addressModel.city);
             break;
-        case 2:
+        }
+        case 2:{
             self.addressModel.county_name = self.pickArr[row][@"name"];
-            self.addressModel.county = ((NSString *)self.pickArr[row][@"id"]).intValue;
+            NSLog(@"%@", self.pickArr[row][@"id"]);
+            NSString *str = [[NSString stringWithFormat:@"%@", self.pickArr[row][@"id"]] copy];
+            self.addressModel.county = [str integerValue];
             break;
-        case 3:
+        }
+        case 3:{
             self.addressModel.town_name = self.pickArr[row][@"name"];
-            self.addressModel.town = ((NSString *)self.pickArr[row][@"id"]).intValue;
+            NSLog(@"%@", self.pickArr[row][@"id"]);
+            NSString *str = [[NSString stringWithFormat:@"%@", self.pickArr[row][@"id"]] copy];
+            self.addressModel.town = [str integerValue];
             break;
-            
+        }
         default:
             break;
     }
@@ -213,9 +261,27 @@
         // textView显示省市县地址
         AddNewAddressCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:2 inSection:0]];
         cell.textV.text = [NSString stringWithFormat:@"%@%@%@%@", self.addressModel.provice_name, self.addressModel.city_name, self.addressModel.county_name, self.addressModel.town_name];
+        [UIView animateWithDuration:0.5 animations:^{
+            [self.pickerV layoutIfNeeded];
+            self.pickerV.frame = CGRectMake(0, kMainScreenHeight, kMainScreenWidth, 350);
+        }];
+        
+        [self textViewDidChange:cell.textV];
     }
     
 }
+
+- (void)textViewResignFirstResponder{
+    for (int i = 0; i < 4; i++) {
+        AddNewAddressCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:i inSection:0]];
+        [cell.textV resignFirstResponder];
+    }
+}
+
+
+
+
+
 
 
 
@@ -266,18 +332,19 @@
 
 - (void)bottomBtnClicked{
     NSMutableDictionary *dic = [[NSMutableDictionary alloc] init];
-    
+    [self textViewResignFirstResponder];
     BOOL isdefault = YES;
     for (int row = 0; row<4; row++) {
         AddNewAddressCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:row inSection:0]];
-        if (!cell.textV.text) {
+        if ([cell.textV.text isEqualToString:@""]) {
             // 请完善地址信息
             UIAlertController *alertV = [UIAlertController alertControllerWithTitle:@"提示" message:@"请完善地址信息" preferredStyle:UIAlertControllerStyleAlert];
             UIAlertAction *act = [UIAlertAction actionWithTitle:@"确定" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
-                return;
+                
             }];
             [alertV addAction:act];
-            [self.navigationController pushViewController:alertV animated:YES];
+            [self presentViewController:alertV animated:YES completion:nil];
+            return;
         }
     }
     AddNewAddressCell *cell = [self.tableView cellForRowAtIndexPath:[NSIndexPath indexPathForRow:4 inSection:0]];
@@ -286,11 +353,12 @@
     [dic setObject:@(self.addressModel.city) forKey:@"city_id"];
     [dic setObject:@(self.addressModel.county) forKey:@"county_id"];
     [dic setObject:@(self.addressModel.town) forKey:@"town_id"];
-    [dic setObject:self.addressModel.consignee forKey:@"consignee"];
-    [dic setObject:@(self.addressModel.mobile) forKey:@"mobile"];
-    [dic setObject:self.addressModel.address forKey:@"address"];
-    [dic setObject:@(isdefault) forKey:@"default"];
-    [BaseNetworking POST: parameters:dic completionHandler:^(id responseObj, NSError *error) {
+    [dic setObject:self.addressModel.consignee forKey:@"name"];
+    [dic setObject:@(self.addressModel.mobile) forKey:@"phone_number"];
+    [dic setObject:self.addressModel.address forKey:@"detail_address"];
+    NSInteger isdef = isdefault ? 1 : 0;
+    [dic setObject:@(isdef) forKey:@"is_default"];
+    [BaseNetworking POST:@"/baochunhui/public/index.php/Index/User/addAddress" parameters:dic completionHandler:^(id responseObj, NSError *error) {
         if (!error) {
             [self.navigationController popViewControllerAnimated:YES];
         }

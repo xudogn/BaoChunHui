@@ -20,7 +20,7 @@ static NSArray *animateImages = nil;
     iv.image = [UIImage imageNamed:@""];
     
     /*
-    //图片数组只初始化一次. 因为图片从png格式解码为bmp位图非常效果CPU. 最好不要反复进行!
+    //图片数组只初始化一次. 因为图片从png格式解码为bmp位图非常消耗CPU. 最好不要反复进行!
     static dispatch_once_t onceToken;
     dispatch_once(&onceToken, ^{
         animateImages = [self animateImages];
@@ -57,10 +57,10 @@ static NSArray *animateImages = nil;
     [self hideHUD];
     MBProgressHUD *hud = [MBProgressHUD showHUDAddedTo:self animated:YES];
     hud.mode = MBProgressHUDModeText;
-    hud.labelText = msg;
+    hud.label.text = msg;
     //    hud.label.text = msg;
     //    [hud hideAnimated:YES afterDelay:1.5];
-    [hud hide:YES afterDelay:1.5];
+    [hud hideAnimated:YES afterDelay:1];
 }
 
 

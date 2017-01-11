@@ -63,7 +63,7 @@
     navi3.navigationBar.barTintColor = [UIColor ShengHuoColor];
     self.viewControllers = @[navi0, navi1, navi2, navi3];
     
-    
+#warning 删除下行代码
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:PartOfOldPeople] forKey:@"obviousModule"];
     
 }
@@ -72,9 +72,9 @@
 - (healthViewController *)healVC {
     if(_healVC == nil) {
         _healVC = [[healthViewController alloc] init];
-        _healVC.title = @"健康";
-        _healVC.tabBarItem.image = [UIImage imageNamed:@""];
-        _healVC.tabBarItem.selectedImage = [UIImage imageNamed:@""];
+        _healVC.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
+        _healVC.tabBarItem.image = [[UIImage imageNamed:@"TabBar_health"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        _healVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"TabBar_health_pre"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     }
     return _healVC;
 }
@@ -82,27 +82,27 @@
 - (LiveViewController *)liveVC {
     if(_liveVC == nil) {
         _liveVC = [[LiveViewController alloc] init];
-        _liveVC.title = @"生活";
-        _liveVC.tabBarItem.image = [UIImage imageNamed:@""];
-        _liveVC.tabBarItem.selectedImage = [UIImage imageNamed:@""];
+        _liveVC.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
+        _liveVC.tabBarItem.image = [[UIImage imageNamed:@"TabBar_life"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        _liveVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"TabBar_life_pre"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     }
     return _liveVC;
 }
 - (MineTableViewController *)mineVC {
     if(_mineVC == nil) {
         _mineVC = [[UIStoryboard storyboardWithName:@"MineStoryboard" bundle:nil] instantiateInitialViewController];
-        _mineVC.title = @"我的";
-        _mineVC.tabBarItem.image = [UIImage imageNamed:@""];
-        _mineVC.tabBarItem.selectedImage = [UIImage imageNamed:@""];
+        _mineVC.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
+        _mineVC.tabBarItem.image = [[UIImage imageNamed:@"TabBar_mine"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        _mineVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"TabBar_mine_pre"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
     }
     return _mineVC;
 }
 - (zhaoHuViewController *)careVC {
     if(_careVC == nil) {
         _careVC = [[zhaoHuViewController alloc] init];
-        _careVC.title = @"照护";
-        _careVC.tabBarItem.image = [UIImage imageNamed:@""];
-        _careVC.tabBarItem.selectedImage = [UIImage imageNamed:@""];
+        _careVC.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
+        _careVC.tabBarItem.image = [[UIImage imageNamed:@"TabBar_care"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
+        _careVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"TabBar_care_pre"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         
     }
     return _careVC;

@@ -25,23 +25,13 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    //网络请求收货地址， 默认收货地址
-    NSDictionary *dic = @{@"user_id": [[NSUserDefaults standardUserDefaults] valueForKey:@"user_id"]};
-    [BaseNetworking GET:@"/baochunhui/public/index.php/Index/User/getUserAdderss" parameters:dic completionHandler:^(id responseObj, NSError *error) {
-        if (!error) {
-            NSMutableArray<addressModel *> *array = [addressModel parse:responseObj];
-            self.address_arr = array;
-        } else {
-            NSLog(@"网络获取收货地址失败");
-        }
-    }];
-    
     
     UINib *nib = [UINib nibWithNibName:@"DeliveryAddressCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"cell"];
     [TRFactory addBackItemForVC:self];
 }
 
+#pragma tableViewDatasource
 
 - (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
     return 1;
@@ -104,7 +94,18 @@
 
 
 
-
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+    NSDictionary *dic = @{@"user_id": [[NSUserDefaults standardUserDefaults] valueForKey:@"user_id"]};
+    [BaseNetworking GET:@"/baochunhui/public/index.php/Index/User/getUserAdderss" parameters:dic completionHandler:^(id responseObj, NSError *error) {
+        if (!error) {
+            NSMutableArray<addressModel *> *array = [addressModel parse:responseObj];
+            self.address_arr = array;
+        } else {
+            NSLog(@"网络获取收货地址失败");
+        }
+    }];
+}
 
 
 
