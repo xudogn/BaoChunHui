@@ -9,6 +9,8 @@
 #import "MineTableViewController.h"
 
 #import "certifyViewController.h"
+#import "ShiMingRenZhengVC.h"
+
 #import "CardTableViewController.h"
 #import "scoreShopViewController.h"
 #import "aboutViewController.h"
@@ -35,7 +37,7 @@
     // Uncomment the following line to display an Edit button in the navigation bar for this view controller.
     // self.navigationItem.rightBarButtonItem = self.editButtonItem;
     
-    [BCHTool addHelpBtnItemForVC:self];
+    
     
     
     
@@ -105,7 +107,9 @@
                 case 2:
                     // 实名认证
                 {
-                    certifyViewController *vc = [[certifyViewController alloc] initWithNibName:@"certifyViewController" bundle:nil];
+                    ShiMingRenZhengVC *vc = [[ShiMingRenZhengVC alloc] initWithNibName:NSStringFromClass([ShiMingRenZhengVC class]) bundle:nil];
+                    //certifyViewController *vc = [[certifyViewController alloc] initWithNibName:@"certifyViewController" bundle:nil];
+                    vc.hidesBottomBarWhenPushed = YES;
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                     break;

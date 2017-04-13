@@ -9,6 +9,8 @@
 #import "healthViewController.h"
 #import "ChuiHuiReXianVC.h"
 #import "WenYiShiPinVC.h"
+#import "JianKangShiPinVC.h"
+#import "JianKanggGuangBoVC.h"
 
 @interface healthViewController ()
 
@@ -37,9 +39,13 @@
 }
 
 - (IBAction)JianKangShiPin:(id)sender {
+    JianKangShiPinVC *vc = [[JianKangShiPinVC alloc]init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)JianKangGuangBo:(id)sender {
+    JianKanggGuangBoVC *vc = [[JianKanggGuangBoVC alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 

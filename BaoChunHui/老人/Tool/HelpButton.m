@@ -12,8 +12,8 @@
 #define kMainWidth [UIScreen mainScreen].bounds.size.width
 #define kMainHeight [UIScreen mainScreen].bounds.size.height
 
-#define kHelpBtnWidth 100
-#define kHelpBtnHeight 100
+#define kHelpBtnWidth 60
+#define kHelpBtnHeight 60
 
 @interface HelpButton ()
 @property (nonatomic, strong) UIButton *btn;
@@ -44,7 +44,6 @@
 
 - (void)addHelpBtn{
     _btn = [UIButton buttonWithType:UIButtonTypeCustom];
-    [_btn setTitle:@"help" forState:UIControlStateNormal];
     _btn.frame = CGRectMake(0, 0, kHelpBtnWidth, kHelpBtnHeight);
     [_btn setImage:[UIImage imageNamed:@"con_phone"] forState:UIControlStateNormal];
     [_btn addTarget:self action:@selector(helpBtnClicked) forControlEvents:UIControlEventTouchUpInside];
@@ -54,6 +53,20 @@
 
 - (void)helpBtnClicked{
     NSLog(@"Help btn clicked!");
+    // 1. 打电话
+    //    NSString *tele = [[NSUserDefaults standardUserDefaults] objectForKey:@"teleNum"];
+    //    NSString *teleNum = [NSString stringWithFormat:@"tel://%@", tele];
+    NSURL *url = [NSURL URLWithString:@"tel://10086"];
+    [[UIApplication sharedApplication] openURL:url];
+    
+    // 打完电话可回来~~~~~~
+//    UIWebView *webView = [[UIWebView alloc] init];
+//    [webView loadRequest:[NSURLRequest requestWithURL:url]];
+    
+    
+    
+    
+    
 }
 
 

@@ -19,6 +19,7 @@
 
 @property(nonatomic, strong) UIWindow * adWindow;
 
+@property(nonatomic, strong) UIWindow *helpWindow;
 
 
 

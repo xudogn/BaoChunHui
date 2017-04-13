@@ -72,6 +72,7 @@
 - (healthViewController *)healVC {
     if(_healVC == nil) {
         _healVC = [[healthViewController alloc] init];
+        _healVC.navigationItem.title = @"健康";
         _healVC.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
         _healVC.tabBarItem.image = [[UIImage imageNamed:@"TabBar_health"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         _healVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"TabBar_health_pre"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -82,6 +83,7 @@
 - (LiveViewController *)liveVC {
     if(_liveVC == nil) {
         _liveVC = [[LiveViewController alloc] init];
+        _liveVC.navigationItem.title = @"生活";
         _liveVC.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
         _liveVC.tabBarItem.image = [[UIImage imageNamed:@"TabBar_life"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         _liveVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"TabBar_life_pre"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -91,6 +93,7 @@
 - (MineTableViewController *)mineVC {
     if(_mineVC == nil) {
         _mineVC = [[UIStoryboard storyboardWithName:@"MineStoryboard" bundle:nil] instantiateInitialViewController];
+        _mineVC.navigationItem.title = @"我的";
         _mineVC.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
         _mineVC.tabBarItem.image = [[UIImage imageNamed:@"TabBar_mine"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         _mineVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"TabBar_mine_pre"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
@@ -100,6 +103,7 @@
 - (zhaoHuViewController *)careVC {
     if(_careVC == nil) {
         _careVC = [[zhaoHuViewController alloc] init];
+        _careVC.navigationItem.title = @"照护";
         _careVC.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
         _careVC.tabBarItem.image = [[UIImage imageNamed:@"TabBar_care"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         _careVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"TabBar_care_pre"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

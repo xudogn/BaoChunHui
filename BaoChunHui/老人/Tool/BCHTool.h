@@ -20,26 +20,8 @@
 + (void)addBackBtnItemForVC:(UIViewController *)ViewController;
 
 
-
-//  添加紧急呼救按钮
-+ (void)addHelpBtnItemForVC:(UIViewController *)ViewContorller;
-+ (UIBarButtonItem *)configHelpBtnItemForVC:(UIViewController *)ViewContorller;
-
 //  添加搜索按钮
 + (void)addSearchBtnAndHelpBtnForVC:(UIViewController *)ViewContorller ViewControllerType:(ViewControllerType)type;
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 

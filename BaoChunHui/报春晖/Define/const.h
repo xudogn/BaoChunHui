@@ -40,6 +40,12 @@ typedef NS_ENUM(NSUInteger, ViewControllerType) {
 #define kScreenW ([UIScreen mainScreen].bounds.size.width)
 #define kScreenH ([UIScreen mainScreen].bounds.size.height)
 
+#define SizeScale (SCREEN_WIDTH != 414 ? 1 : 1.2)
+#define kFont(value) [UIFont systemFontOfSize:value * SizeScale]
+
+
+
+
 
 
 //- (void)sendHelpMsg{\

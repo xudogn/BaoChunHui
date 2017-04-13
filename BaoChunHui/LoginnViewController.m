@@ -10,6 +10,8 @@
 #import "RegistViewController.h"
 #import "OlePeopleTabBarViewController.h"
 #import "AppDelegate.h"
+#import "FuWuJIGOUVC.h"
+
 
 @interface LoginnViewController ()
 
@@ -74,8 +76,17 @@
         case PartOfCareStation:
             //照护站
             break;
-        case PartOfService:
+        case PartOfService:{
             //服务站
+            UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+            layout.minimumLineSpacing = 1;
+            layout.minimumInteritemSpacing = 1;
+            layout.sectionInset = UIEdgeInsetsMake(1, 1, 1, 1);
+            layout.itemSize = CGSizeMake((kScreenW - 3)/2.0, 100);
+            FuWuJIGOUVC *vc = [[FuWuJIGOUVC alloc] initWithCollectionViewLayout:layout];
+            UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+            [self presentViewController:navi animated:YES completion:nil];
+        }
             break;
         case PartOf5:
             //
@@ -125,12 +136,23 @@
         case PartOfService:
             //服务站
         {
+            
             NSNumber *obviousModule = [NSNumber numberWithInteger:PartOfService];
             [[NSUserDefaults standardUserDefaults] setObject:obviousModule forKey:@"obviousModule"];
         }
             break;
         case PartOf5:
             //
+        {
+            UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+            layout.minimumLineSpacing = 1;
+            layout.minimumInteritemSpacing = 1;
+            layout.sectionInset = UIEdgeInsetsMake(1, 1, 1, 1);
+            layout.itemSize = CGSizeMake((kScreenW - 3)/2.0, 100);
+            FuWuJIGOUVC *vc = [[FuWuJIGOUVC alloc] initWithCollectionViewLayout:layout];
+            UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+            [self presentViewController:navi animated:YES completion:nil];
+        }
         {
             
         }

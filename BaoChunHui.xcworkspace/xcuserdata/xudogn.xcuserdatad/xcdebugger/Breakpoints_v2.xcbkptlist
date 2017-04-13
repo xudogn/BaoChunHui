@@ -144,22 +144,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "BaoChunHui/NetManager/BaseNetworking.m"
-            timestampString = "505362055.748529"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "20"
-            endingLineNumber = "20"
-            landmarkName = "+GET:parameters:completionHandler:"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "BaoChunHui/&#x8001;&#x4eba;/ViewContorller/&#x751f;&#x6d3b;/&#x5546;&#x57ce;/&#x6dfb;&#x52a0;&#x6536;&#x8d27;&#x5730;&#x5740;VC/Add_EditShouHuoDiZhiVCViewController.m"
             timestampString = "505459481.313136"
             startingColumnNumber = "9223372036854775807"
@@ -177,12 +161,12 @@
                   moduleName = "BaoChunHui"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xudogn/GitHub/BaoChunHui/BaoChunHui/%E8%80%81%E4%BA%BA/ViewContorller/%E7%94%9F%E6%B4%BB/%E5%95%86%E5%9F%8E/%E6%B7%BB%E5%8A%A0%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80VC/Add_EditShouHuoDiZhiVCViewController.m"
-                  timestampString = "505792127.047985"
+                  timestampString = "513762134.606801"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "361"
                   endingLineNumber = "361"
-                  offsetFromSymbolStart = "2444">
+                  offsetFromSymbolStart = "2297">
                </Location>
                <Location
                   shouldBeEnabled = "Yes"
@@ -192,30 +176,14 @@
                   moduleName = "BaoChunHui"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xudogn/GitHub/BaoChunHui/BaoChunHui/%E8%80%81%E4%BA%BA/ViewContorller/%E7%94%9F%E6%B4%BB/%E5%95%86%E5%9F%8E/%E6%B7%BB%E5%8A%A0%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80VC/Add_EditShouHuoDiZhiVCViewController.m"
-                  timestampString = "505792127.049814"
+                  timestampString = "513762134.610002"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "362"
                   endingLineNumber = "362"
-                  offsetFromSymbolStart = "80">
+                  offsetFromSymbolStart = "75">
                </Location>
             </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "BaoChunHui/NetManager/BaseNetworking.m"
-            timestampString = "505460365.726968"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "35"
-            endingLineNumber = "35"
-            landmarkName = "+POST:parameters:completionHandler:"
-            landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy

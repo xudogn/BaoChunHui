@@ -34,12 +34,18 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     
+    /*
     [self configNavigationBarTitle];
     [self.view showHUD];
     [self configRefreshview];
     UINib *nib = [UINib nibWithNibName:@"ShiPinCell" bundle:nil];
     [self.tableView registerNib:nib forCellReuseIdentifier:@"cell"];
     [TRFactory addBackItemForVC:self];
+    self.tableView.tableFooterView = [UIView new];
+    */
+    AVViewController *vc = [[AVViewController alloc] init];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 
 - (void)configRefreshview{

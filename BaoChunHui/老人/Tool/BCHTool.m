@@ -28,43 +28,11 @@
     
 }
 
-+(void)addHelpBtnItemForVC:(UIViewController *)ViewContorller{
-    
-    ViewContorller.navigationItem.rightBarButtonItem = [self configHelpBtnItemForVC:ViewContorller];
-    
-}
 
-+ (UIBarButtonItem *)configHelpBtnItemForVC:(UIViewController *)ViewContorller{
-    UIButton *HelpBtn = [UIButton buttonWithType:UIButtonTypeCustom];
-    HelpBtn.frame = CGRectMake(0, 0, 80, 30);
-    HelpBtn.backgroundColor = [UIColor orangeColor];
-    [HelpBtn setTitle:@"呼救" forState:UIControlStateNormal];
-    HelpBtn.titleLabel.font = [UIFont systemFontOfSize:30];
-    HelpBtn.titleLabel.numberOfLines = 0;
-    
-    [HelpBtn bk_addEventHandler:^(id sender) {
-        // 一键呼救
-        // 1. 打电话
-        //    NSString *tele = [[NSUserDefaults standardUserDefaults] objectForKey:@"teleNum"];
-        //    NSString *teleNum = [NSString stringWithFormat:@"tel://%@", tele];
-#warning change telenumber
-        NSURL *url = [NSURL URLWithString:@"tel://10086"];
-        // zhijie bo da
-        //[[UIApplication sharedApplication] openURL:url];
-        
-        // 打完电话可回来~~~~~~
-        UIWebView *webView = [[UIWebView alloc] init];
-        [webView loadRequest:[NSURLRequest requestWithURL:url]];
-        
-        [ViewContorller.view addSubview:webView];
-    } forControlEvents:UIControlEventTouchUpInside];
-    UIBarButtonItem *helpItem = [[UIBarButtonItem alloc] initWithCustomView:HelpBtn];
-    return helpItem;
-}
 
 + (void)addSearchBtnAndHelpBtnForVC:(UIViewController *)ViewContorller ViewControllerType:(ViewControllerType)type{
     
-    UIBarButtonItem *helpItem = [self configHelpBtnItemForVC:ViewContorller];
+    
     
     UIButton *btn = [UIButton buttonWithType:UIButtonTypeCustom];
     [btn setImage:[UIImage imageNamed:@""] forState:UIControlStateNormal];
@@ -80,7 +48,10 @@
     } forControlEvents:UIControlEventTouchUpInside];
     
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:btn];
-    ViewContorller.navigationItem.rightBarButtonItems = @[helpItem, item];
+    UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    item1.width = 60;
+    ViewContorller.navigationItem.rightBarButtonItems = @[item1, item];
+    
     
 }
 

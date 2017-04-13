@@ -34,7 +34,6 @@
     
     [self headerView];
     
-    [BCHTool addHelpBtnItemForVC:self];
     
     self.navigationItem.title = @"详情";
     

@@ -10,4 +10,8 @@
 
 @interface jianKangJiGouCell : UICollectionViewCell
 
+@property(nonatomic, strong) UILabel *name;
+
+@property(nonatomic, strong) UIImageView *imgV;
+
 @end

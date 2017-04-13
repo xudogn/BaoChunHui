@@ -41,7 +41,7 @@ typedef enum : NSUInteger {
 
 - (void)getNetRequestWithVideoType:(VideoType)type RequestMode:(RequestMode)requestMode completionHandler:(void(^)(NSError *error))completionHandler;
 
-
+- (void)getNetRequestWithSearchText:(NSString *)searchText RequestMode:(RequestMode)requestMode completionHandler:(void(^)(NSError *error))completionHandler;
 
 
 

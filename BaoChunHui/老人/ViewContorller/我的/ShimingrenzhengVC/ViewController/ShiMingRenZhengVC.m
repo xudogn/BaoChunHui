@@ -7,8 +7,11 @@
 //
 
 #import "ShiMingRenZhengVC.h"
+#import "SMRZView.h"
+
 
 @interface ShiMingRenZhengVC ()
+@property (weak, nonatomic) IBOutlet UIScrollView *scrollV;
 
 @end
 
@@ -17,6 +20,14 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
+    
+    SMRZView *SMRZview = [[NSBundle mainBundle] loadNibNamed:@"SMRZView" owner:nil options:nil].firstObject;
+    [self.scrollV addSubview:SMRZview];
+    self.scrollV.showsVerticalScrollIndicator = NO;
+    self.scrollV.showsHorizontalScrollIndicator = NO;
+    [self.scrollV sizeToFit];
+    self.scrollV.contentSize = SMRZview.size;
+    //[self.scrollV sizeThatFits:CGSizeMake(600, 1000)];
 }
 
 - (void)didReceiveMemoryWarning {

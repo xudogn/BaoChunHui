@@ -7,6 +7,7 @@
 //
 
 #import "FuWuJIGOUVC.h"
+#import "jianKangJiGouCell.h"
 
 @interface FuWuJIGOUVC ()
 
@@ -19,13 +20,19 @@ static NSString * const reuseIdentifier = @"Cell";
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    // Uncomment the following line to preserve selection between presentations
-    // self.clearsSelectionOnViewWillAppear = NO;
     
-    // Register cell classes
-    [self.collectionView registerClass:[UICollectionViewCell class] forCellWithReuseIdentifier:reuseIdentifier];
     
-    // Do any additional setup after loading the view.
+    
+    [self.collectionView registerClass:[jianKangJiGouCell class] forCellWithReuseIdentifier:reuseIdentifier];
+    
+    self.collectionView.backgroundColor = [UIColor colorWithR:244 g:244 b:244 alpha:1];
+    
+    
+    self.navigationItem.title = @"服务机构";
+    
+    [self.navigationController.navigationBar setTitleTextAttributes:
+  @{NSFontAttributeName:[UIFont systemFontOfSize:33],
+    NSForegroundColorAttributeName:[UIColor blackColor]}];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -46,23 +53,34 @@ static NSString * const reuseIdentifier = @"Cell";
 #pragma mark <UICollectionViewDataSource>
 
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-#warning Incomplete implementation, return the number of sections
-    return 0;
+
+    return 1;
 }
 
 
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-#warning Incomplete implementation, return the number of items
-    return 0;
+
+    return 10;
 }
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
-    UICollectionViewCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    
-    // Configure the cell
-    
+    jianKangJiGouCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
+    NSArray<NSString *> *arr = @[@"政府民政老龄办",@"全国社区助老工程",@"养老机构",@"社区托老",@"家政公司",@"旅游公司",@"律师事务所",@"老年产品生产商",@"志愿者组织", @"返回"];
+    cell.name.text = arr[indexPath.row];
+    cell.imgV.image = [UIImage imageNamed:@"zhaohu_nursing"];
+    cell.backgroundColor = [UIColor whiteColor];
     return cell;
 }
+
+#pragma mark delegate
+
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    if (indexPath.row == 9) {
+        [self dismissViewControllerAnimated:YES completion:nil];
+    }
+}
+
+
 
 #pragma mark <UICollectionViewDelegate>
 

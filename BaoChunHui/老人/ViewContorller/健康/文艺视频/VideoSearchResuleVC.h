@@ -10,4 +10,9 @@
 
 @interface VideoSearchResuleVC : UITableViewController
 
+@property(nonatomic, strong) NSString *searchText;
+
+- (instancetype)initWithSearchText:(NSString *)searchTest;
+
+
 @end

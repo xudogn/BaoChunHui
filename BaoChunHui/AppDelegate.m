@@ -13,7 +13,7 @@
 #import "OlePeopleTabBarViewController.h"
 #import "NurseTabBarViewController.h"
 #import "FamilyTabBarViewController.h"
-
+#import "HelpButton.h"
 
 
 
@@ -52,7 +52,7 @@
     }
     
     
-    //[self netTest];
+    
     
     
     
@@ -72,6 +72,9 @@
     //[self speechModelConfig];  // 通过此设置，防止因为手机设置而听不到声音、
    // [self configHuanXin];      // 环信
     [self shareSDKConfig];
+    
+    
+    _helpWindow = [[HelpButton alloc] initWithFrame:CGRectZero];
     
     return YES;
 }

@@ -61,7 +61,24 @@
     
 }
 
-
+- (void)getNetRequestWithSearchText:(NSString *)searchText RequestMode:(RequestMode)requestMode completionHandler:(void (^)(NSError *))completionHandler{
+    if (requestMode == RequestModeRefresh) {
+        self.page = 0;
+    }
+    NSDictionary *dic = [NSDictionary dictionaryWithObject:searchText forKey:@"name"];
+    self.dataTask = [BaseNetworking GET:@"/baochunhui/public/index.php/Video/Index/selVideo" parameters:dic completionHandler:^(id responseObj, NSError *error) {
+        if (!error) {
+            if (requestMode == RequestModeRefresh) {
+                [self.datalist removeAllObjects];
+            }
+            [self.datalist addObjectsFromArray:[WenYiShiPinViewModel parse:responseObj]];
+            self.page += 1;
+            !completionHandler ?: completionHandler(nil);
+        } else {
+            !completionHandler ?: completionHandler(error);
+        }
+    }];
+}
 
 
 

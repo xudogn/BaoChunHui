@@ -50,7 +50,6 @@
 
 - (void)configSearchBarAndBtn{
     
-    UIBarButtonItem *helpItem = [BCHTool configHelpBtnItemForVC:self];
     // searchBar宽度
     self.searchBar = [[UISearchBar alloc] initWithFrame:CGRectMake(0, 0, kMainScreenWidth-200 , 30)];
     self.searchBar.delegate = self;
@@ -63,7 +62,9 @@
     self.searchBtn.frame = CGRectMake(0, 0, 50, 30);   // frame
     self.searchBtn.backgroundColor = [UIColor orangeColor];
     UIBarButtonItem *item = [[UIBarButtonItem alloc] initWithCustomView:self.searchBtn];
-    self.navigationItem.rightBarButtonItems = @[helpItem, item];
+    UIBarButtonItem *item1 = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemFixedSpace target:nil action:nil];
+    item1.width = 60;
+    self.navigationItem.rightBarButtonItems = @[item1, item];
     
     
     
