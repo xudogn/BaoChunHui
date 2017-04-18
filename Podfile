@@ -16,6 +16,9 @@ pod 'MJRefresh'
 pod ’YYKit’
 pod ‘MBProgressHUD’
 pod ‘iCarousel’
+pod 'AMap3DMap'
+pod 'AMapLocation'
+
 
 
 end

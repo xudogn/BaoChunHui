@@ -26,7 +26,7 @@
     
 }
 
-- (IBAction)chooseModule:(UIButton *)sender {
+- (IBAction)chooseModule:(UIControl *)sender {
     // [[speach sharedSpeechModel] speechStartWithText:sender.titleLabel.text];
     //sleep(2);
     if (/*已经自动登录*//* DISABLES CODE */ (0)) {

@@ -9,6 +9,12 @@
 #import "LoginnViewController.h"
 #import "RegistViewController.h"
 #import "OlePeopleTabBarViewController.h"
+#import "FamilyTabBarViewController.h"
+
+
+
+
+
 #import "AppDelegate.h"
 #import "FuWuJIGOUVC.h"
 
@@ -124,7 +130,13 @@
             break;
         case PartOfFamily:
             //家属
+        {
+            FamilyTabBarViewController *vc = [[FamilyTabBarViewController alloc] init];
+            AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            delegate.window.rootViewController = vc;
+            
             [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:PartOfFamily] forKey:@"obviousModule"];
+        }
             break;
         case PartOfCareStation:
             //照护站

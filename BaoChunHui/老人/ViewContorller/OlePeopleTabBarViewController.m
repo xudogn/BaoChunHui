@@ -63,7 +63,7 @@
     navi3.navigationBar.barTintColor = [UIColor ShengHuoColor];
     self.viewControllers = @[navi0, navi1, navi2, navi3];
     
-#warning 删除下行代码
+
     [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:PartOfOldPeople] forKey:@"obviousModule"];
     
 }

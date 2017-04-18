@@ -80,6 +80,9 @@
 		E438318F1E9F152E0009BB09 /* JianKanggGuangBoVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E438318E1E9F152E0009BB09 /* JianKanggGuangBoVC.m */; };
 		E43831921E9F245C0009BB09 /* FuWuJIGOUVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E43831911E9F245C0009BB09 /* FuWuJIGOUVC.m */; };
 		E43831951E9F35F10009BB09 /* jianKangJiGouCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E43831941E9F35F10009BB09 /* jianKangJiGouCell.m */; };
+		E43FDBF01EA4BADF00A55A81 /* MapVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E43FDBEF1EA4BADF00A55A81 /* MapVC.m */; };
+		E43FDBF31EA4BE8800A55A81 /* MineTableVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E43FDBF21EA4BE8800A55A81 /* MineTableVC.m */; };
+		E43FDBF51EA4BEAE00A55A81 /* MineTVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E43FDBF41EA4BEAE00A55A81 /* MineTVC.storyboard */; };
 		E441206E1DFEE03600483E7C /* UIColor+myColor.m in Sources */ = {isa = PBXBuildFile; fileRef = E441206D1DFEE03600483E7C /* UIColor+myColor.m */; };
 		E4423DAB1E247FC700F7A2DA /* WenYiShiPinViewModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4423DAA1E247FC700F7A2DA /* WenYiShiPinViewModel.m */; };
 		E4423DAE1E24818C00F7A2DA /* WenYiShiPinModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E4423DAD1E24818C00F7A2DA /* WenYiShiPinModel.m */; };
@@ -335,6 +338,11 @@
 		E43831911E9F245C0009BB09 /* FuWuJIGOUVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FuWuJIGOUVC.m; path = "BaoChunHui/老人/ViewContorller/健康/健康广播/FuWuJIGOUVC.m"; sourceTree = SOURCE_ROOT; };
 		E43831931E9F35F10009BB09 /* jianKangJiGouCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = jianKangJiGouCell.h; path = "BaoChunHui/老人/ViewContorller/健康/健康广播/jianKangJiGouCell.h"; sourceTree = SOURCE_ROOT; };
 		E43831941E9F35F10009BB09 /* jianKangJiGouCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = jianKangJiGouCell.m; path = "BaoChunHui/老人/ViewContorller/健康/健康广播/jianKangJiGouCell.m"; sourceTree = SOURCE_ROOT; };
+		E43FDBEE1EA4BADF00A55A81 /* MapVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MapVC.h; sourceTree = "<group>"; };
+		E43FDBEF1EA4BADF00A55A81 /* MapVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MapVC.m; sourceTree = "<group>"; };
+		E43FDBF11EA4BE8800A55A81 /* MineTableVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MineTableVC.h; sourceTree = "<group>"; };
+		E43FDBF21EA4BE8800A55A81 /* MineTableVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MineTableVC.m; sourceTree = "<group>"; };
+		E43FDBF41EA4BEAE00A55A81 /* MineTVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = MineTVC.storyboard; sourceTree = "<group>"; };
 		E441206C1DFEE03600483E7C /* UIColor+myColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIColor+myColor.h"; sourceTree = "<group>"; };
 		E441206D1DFEE03600483E7C /* UIColor+myColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIColor+myColor.m"; sourceTree = "<group>"; };
 		E4423DA91E247FC700F7A2DA /* WenYiShiPinViewModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WenYiShiPinViewModel.h; sourceTree = "<group>"; };
@@ -1035,6 +1043,73 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		E43FDBE61EA4BA2900A55A81 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				E43FDBE81EA4BA8E00A55A81 /* Model */,
+				E43FDBE91EA4BA8E00A55A81 /* View */,
+				E43FDBEA1EA4BA8E00A55A81 /* ViewController */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
+		E43FDBE71EA4BA2900A55A81 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				E43FDBEB1EA4BA9900A55A81 /* Model */,
+				E43FDBEC1EA4BA9900A55A81 /* View */,
+				E43FDBED1EA4BA9900A55A81 /* ViewController */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
+		E43FDBE81EA4BA8E00A55A81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E43FDBE91EA4BA8E00A55A81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E43FDBEA1EA4BA8E00A55A81 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E43FDBEE1EA4BADF00A55A81 /* MapVC.h */,
+				E43FDBEF1EA4BADF00A55A81 /* MapVC.m */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
+		E43FDBEB1EA4BA9900A55A81 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		E43FDBEC1EA4BA9900A55A81 /* View */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		E43FDBED1EA4BA9900A55A81 /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				E43FDBF11EA4BE8800A55A81 /* MineTableVC.h */,
+				E43FDBF21EA4BE8800A55A81 /* MineTableVC.m */,
+				E43FDBF41EA4BEAE00A55A81 /* MineTVC.storyboard */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		E445F3171DF7AD6C00377343 /* 搜索VC */ = {
 			isa = PBXGroup;
 			children = (
@@ -1408,6 +1483,8 @@
 		E45E82E41DDAD61900CC493B /* 家属 */ = {
 			isa = PBXGroup;
 			children = (
+				E43FDBE61EA4BA2900A55A81 /* Map */,
+				E43FDBE71EA4BA2900A55A81 /* Mine */,
 				E4AE1C291DE455E2002795BD /* ViewController */,
 				E4089AE21DDC3A73005E7ED3 /* Family.storyboard */,
 			);
@@ -1818,7 +1895,7 @@
 				TargetAttributes = {
 					E4233B6F1DDAA1980023D3DC = {
 						CreatedOnToolsVersion = 8.1;
-						DevelopmentTeam = FE6TF3GM92;
+						DevelopmentTeam = 693CCUSTEP;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -1865,6 +1942,7 @@
 				E4127AA01DF5440100C20658 /* shopFoodCell.xib in Resources */,
 				E4AE1BDD1DE3ED5B002795BD /* MineStoryboard.storyboard in Resources */,
 				E4520DB81DE5B9520043C234 /* read_me.txt in Resources */,
+				E43FDBF51EA4BEAE00A55A81 /* MineTVC.storyboard in Resources */,
 				E4FAFCD81E03C9C900C2E945 /* goodsWithGuigeCell.xib in Resources */,
 				E4127AA31DF5440100C20658 /* shopPingJiaCell.xib in Resources */,
 				E4AE1BCC1DE3E259002795BD /* LiveViewController.xib in Resources */,
@@ -1960,6 +2038,7 @@
 				E44ACBE21E0650D000426D8D /* searchTableViewCell.m in Sources */,
 				E40A75061DDB295100A30B81 /* AdNetWorking.m in Sources */,
 				E438318F1E9F152E0009BB09 /* JianKanggGuangBoVC.m in Sources */,
+				E43FDBF01EA4BADF00A55A81 /* MapVC.m in Sources */,
 				E4127AB81DF548D400C20658 /* shangChengVC.m in Sources */,
 				E4501B0C1DE71C840015A79E /* oldNetworking.m in Sources */,
 				E4BF092D1DE2E2AB0075A746 /* LoginnViewController.m in Sources */,
@@ -2015,6 +2094,7 @@
 				E44ACBE31E0650D000426D8D /* sendMeadlTableViewController.m in Sources */,
 				E4AE1BE61DE43BC3002795BD /* BCHnaviViewController.m in Sources */,
 				E44ACBE51E0650D000426D8D /* TRFactory.m in Sources */,
+				E43FDBF31EA4BE8800A55A81 /* MineTableVC.m in Sources */,
 				E449324D1DFA94F70082DEC7 /* SelectModel.m in Sources */,
 				E4127A9B1DF5440100C20658 /* foodClassModel.m in Sources */,
 				E463B6A01E1D11030086AC58 /* Add_EditShouHuoDiZhiVCViewController.m in Sources */,
@@ -2183,7 +2263,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
-				DEVELOPMENT_TEAM = FE6TF3GM92;
+				DEVELOPMENT_TEAM = 693CCUSTEP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
@@ -2218,7 +2298,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_WARN_DOCUMENTATION_COMMENTS = NO;
-				DEVELOPMENT_TEAM = FE6TF3GM92;
+				DEVELOPMENT_TEAM = 693CCUSTEP;
 				ENABLE_BITCODE = NO;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
