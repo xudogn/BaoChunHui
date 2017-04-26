@@ -38,6 +38,7 @@
         case 101:
         {
             [self alertForWait];
+            //
         }
             break;
         case 102:
