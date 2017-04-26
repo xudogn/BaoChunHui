@@ -84,7 +84,7 @@
 - (MapVC *)mapVC{
     if (!_mapVC) {
         _mapVC = [MapVC new];
-        _mapVC.navigationItem.title = @"监控";
+        _mapVC.navigationItem.title = @"实时监控";
         _mapVC.tabBarItem.imageInsets = UIEdgeInsetsMake(5, 0, -5, 0);
         _mapVC.tabBarItem.image = [[UIImage imageNamed:@"TabBar_care"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];
         _mapVC.tabBarItem.selectedImage = [[UIImage imageNamed:@"TabBar_care_pre"] imageWithRenderingMode:UIImageRenderingModeAlwaysOriginal];

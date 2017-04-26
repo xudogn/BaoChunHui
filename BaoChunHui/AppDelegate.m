@@ -27,7 +27,10 @@
 #import "WXApi.h"
 #import "WeiboSDK.h"
 
+#import <MAMapKit/MAMapKit.h>
+#import <AMapFoundationKit/AMapFoundationKit.h>
 
+#define MapKey @"bc5adfc3928d11f149e4d45a5061b481"
 
 
 
@@ -75,6 +78,8 @@
     
     
     _helpWindow = [[HelpButton alloc] initWithFrame:CGRectZero];
+    
+    [AMapServices sharedServices].apiKey = MapKey;
     
     return YES;
 }

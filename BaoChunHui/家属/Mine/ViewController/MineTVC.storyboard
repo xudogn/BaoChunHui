@@ -21,17 +21,17 @@
                             <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <subviews>
-                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="IMG_0412" translatesAutoresizingMaskIntoConstraints="NO" id="ev5-Gc-Ecx">
-                                    <rect key="frame" x="148" y="16" width="79" height="76"/>
+                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="IMG_0412" translatesAutoresizingMaskIntoConstraints="NO" id="ev5-Gc-Ecx">
+                                    <rect key="frame" x="148" y="16" width="80" height="80"/>
                                     <constraints>
                                         <constraint firstAttribute="height" constant="76" id="Yko-A6-iWi"/>
                                         <constraint firstAttribute="width" constant="79" id="eIv-2a-25x"/>
                                     </constraints>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="number" keyPath="self.layer.cornerRadius">
-                                            <integer key="value" value="30"/>
+                                            <integer key="value" value="40"/>
                                         </userDefinedRuntimeAttribute>
-                                        <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.clipsToBounds" value="YES"/>
+                                        <userDefinedRuntimeAttribute type="boolean" keyPath="self.layer.masksToBounds" value="YES"/>
                                     </userDefinedRuntimeAttributes>
                                 </imageView>
                                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="hPb-PG-G90">
@@ -314,52 +314,6 @@
                                     </tableViewCell>
                                 </cells>
                             </tableViewSection>
-                            <tableViewSection id="kao-mS-ldv">
-                                <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="60" id="uYo-vz-vVP">
-                                        <rect key="frame" x="0.0" y="724" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="uYo-vz-vVP" id="qIN-4w-bpl">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="59"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="list_change" translatesAutoresizingMaskIntoConstraints="NO" id="E9t-KO-QwR">
-                                                    <rect key="frame" x="8" y="8" width="44" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="角色切换" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="53O-kG-ZXb">
-                                                    <rect key="frame" x="66" y="8" width="208" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" selectionStyle="default" accessoryType="disclosureIndicator" indentationWidth="10" rowHeight="60" id="ehL-d5-nCQ">
-                                        <rect key="frame" x="0.0" y="784" width="375" height="60"/>
-                                        <autoresizingMask key="autoresizingMask"/>
-                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="ehL-d5-nCQ" id="yH6-q6-9r6">
-                                            <rect key="frame" x="0.0" y="0.0" width="342" height="59"/>
-                                            <autoresizingMask key="autoresizingMask"/>
-                                            <subviews>
-                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="list_aboutus" translatesAutoresizingMaskIntoConstraints="NO" id="rji-HP-mxM">
-                                                    <rect key="frame" x="8" y="8" width="44" height="44"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                </imageView>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="关于我们" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wBq-vP-SSi">
-                                                    <rect key="frame" x="66" y="8" width="208" height="43"/>
-                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                            </subviews>
-                                        </tableViewCellContentView>
-                                    </tableViewCell>
-                                </cells>
-                            </tableViewSection>
                         </sections>
                         <connections>
                             <outlet property="dataSource" destination="Xm4-Xq-5VW" id="XGA-fa-Kbx"/>
@@ -375,9 +329,7 @@
     <resources>
         <image name="IMG_0412" width="744" height="1392"/>
         <image name="list_IDcard" width="30" height="30"/>
-        <image name="list_aboutus" width="30" height="30"/>
         <image name="list_card" width="30" height="30"/>
-        <image name="list_change" width="30" height="30"/>
         <image name="list_order" width="30" height="30"/>
         <image name="list_phone" width="30" height="30"/>
         <image name="list_setting" width="30" height="30"/>

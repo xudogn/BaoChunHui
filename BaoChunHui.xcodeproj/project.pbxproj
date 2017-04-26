@@ -159,6 +159,13 @@
 		E4548A951E0578E000878E23 /* DeliveryAddressViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4548A931E0578E000878E23 /* DeliveryAddressViewController.xib */; };
 		E4548A991E057D3A00878E23 /* DeliveryAddressCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E4548A971E057D3A00878E23 /* DeliveryAddressCell.m */; };
 		E4548A9A1E057D3A00878E23 /* DeliveryAddressCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E4548A981E057D3A00878E23 /* DeliveryAddressCell.xib */; };
+		E458F9061EA6FC7D000D8B2F /* settingTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E458F9041EA6FC7D000D8B2F /* settingTVC.m */; };
+		E458F90B1EA6FF72000D8B2F /* settingTVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E458F90A1EA6FF72000D8B2F /* settingTVC.storyboard */; };
+		E458F90E1EA703D9000D8B2F /* shouQuanTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E458F90D1EA703D9000D8B2F /* shouQuanTVC.m */; };
+		E458F9141EA705D3000D8B2F /* shouQuanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E458F9121EA705D3000D8B2F /* shouQuanCell.m */; };
+		E458F9151EA705D3000D8B2F /* shouQuanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E458F9131EA705D3000D8B2F /* shouQuanCell.xib */; };
+		E458F9181EA73AF3000D8B2F /* shouQuanModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E458F9171EA73AF3000D8B2F /* shouQuanModel.m */; };
+		E45B0A3A1EADC93E006D89BF /* QiangDanVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E45B0A391EADC93E006D89BF /* QiangDanVC.m */; };
 		E45E831E1DDAE65B00CC493B /* AdViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E45E831D1DDAE65B00CC493B /* AdViewController.m */; };
 		E463220F1E6CFD3400EB2D99 /* ShiMingRenZhengVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E463220C1E6CFD3400EB2D99 /* ShiMingRenZhengVC.m */; };
 		E46322101E6CFD3400EB2D99 /* ShiMingRenZhengVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E463220D1E6CFD3400EB2D99 /* ShiMingRenZhengVC.xib */; };
@@ -483,6 +490,18 @@
 		E4548A961E057D3A00878E23 /* DeliveryAddressCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DeliveryAddressCell.h; sourceTree = "<group>"; };
 		E4548A971E057D3A00878E23 /* DeliveryAddressCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DeliveryAddressCell.m; sourceTree = "<group>"; };
 		E4548A981E057D3A00878E23 /* DeliveryAddressCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = DeliveryAddressCell.xib; sourceTree = "<group>"; };
+		E458F9031EA6FC7D000D8B2F /* settingTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = settingTVC.h; sourceTree = "<group>"; };
+		E458F9041EA6FC7D000D8B2F /* settingTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = settingTVC.m; sourceTree = "<group>"; };
+		E458F90A1EA6FF72000D8B2F /* settingTVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = settingTVC.storyboard; sourceTree = "<group>"; };
+		E458F90C1EA703D9000D8B2F /* shouQuanTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shouQuanTVC.h; sourceTree = "<group>"; };
+		E458F90D1EA703D9000D8B2F /* shouQuanTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shouQuanTVC.m; sourceTree = "<group>"; };
+		E458F9111EA705D3000D8B2F /* shouQuanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shouQuanCell.h; sourceTree = "<group>"; };
+		E458F9121EA705D3000D8B2F /* shouQuanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shouQuanCell.m; sourceTree = "<group>"; };
+		E458F9131EA705D3000D8B2F /* shouQuanCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = shouQuanCell.xib; sourceTree = "<group>"; };
+		E458F9161EA73AF3000D8B2F /* shouQuanModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shouQuanModel.h; sourceTree = "<group>"; };
+		E458F9171EA73AF3000D8B2F /* shouQuanModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shouQuanModel.m; sourceTree = "<group>"; };
+		E45B0A381EADC93E006D89BF /* QiangDanVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiangDanVC.h; sourceTree = "<group>"; };
+		E45B0A391EADC93E006D89BF /* QiangDanVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiangDanVC.m; sourceTree = "<group>"; };
 		E45E831C1DDAE65B00CC493B /* AdViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AdViewController.h; sourceTree = "<group>"; };
 		E45E831D1DDAE65B00CC493B /* AdViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AdViewController.m; sourceTree = "<group>"; };
 		E45E831F1DDAEF7000CC493B /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
@@ -1103,6 +1122,7 @@
 		E43FDBED1EA4BA9900A55A81 /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				E458F8FE1EA6FBE1000D8B2F /* 设置 */,
 				E43FDBF11EA4BE8800A55A81 /* MineTableVC.h */,
 				E43FDBF21EA4BE8800A55A81 /* MineTableVC.m */,
 				E43FDBF41EA4BEAE00A55A81 /* MineTVC.storyboard */,
@@ -1401,6 +1421,135 @@
 			path = "添加收货地址VC";
 			sourceTree = "<group>";
 		};
+		E458F8FE1EA6FBE1000D8B2F /* 设置 */ = {
+			isa = PBXGroup;
+			children = (
+				E458F8FF1EA6FBE1000D8B2F /* 亲属授权 */,
+				E458F9001EA6FBE1000D8B2F /* 关于我们 */,
+				E458F9011EA6FBE1000D8B2F /* 清除缓存 */,
+				E458F9021EA6FBE1000D8B2F /* 给我评分 */,
+				E458F9031EA6FC7D000D8B2F /* settingTVC.h */,
+				E458F9041EA6FC7D000D8B2F /* settingTVC.m */,
+				E458F90A1EA6FF72000D8B2F /* settingTVC.storyboard */,
+			);
+			path = "设置";
+			sourceTree = "<group>";
+		};
+		E458F8FF1EA6FBE1000D8B2F /* 亲属授权 */ = {
+			isa = PBXGroup;
+			children = (
+				E458F90F1EA705A7000D8B2F /* model */,
+				E458F9101EA705A7000D8B2F /* view */,
+				E458F90C1EA703D9000D8B2F /* shouQuanTVC.h */,
+				E458F90D1EA703D9000D8B2F /* shouQuanTVC.m */,
+			);
+			path = "亲属授权";
+			sourceTree = "<group>";
+		};
+		E458F9001EA6FBE1000D8B2F /* 关于我们 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "关于我们";
+			sourceTree = "<group>";
+		};
+		E458F9011EA6FBE1000D8B2F /* 清除缓存 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "清除缓存";
+			sourceTree = "<group>";
+		};
+		E458F9021EA6FBE1000D8B2F /* 给我评分 */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = "给我评分";
+			sourceTree = "<group>";
+		};
+		E458F90F1EA705A7000D8B2F /* model */ = {
+			isa = PBXGroup;
+			children = (
+				E458F9161EA73AF3000D8B2F /* shouQuanModel.h */,
+				E458F9171EA73AF3000D8B2F /* shouQuanModel.m */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E458F9101EA705A7000D8B2F /* view */ = {
+			isa = PBXGroup;
+			children = (
+				E458F9111EA705D3000D8B2F /* shouQuanCell.h */,
+				E458F9121EA705D3000D8B2F /* shouQuanCell.m */,
+				E458F9131EA705D3000D8B2F /* shouQuanCell.xib */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E45B0A301EADC3C9006D89BF /* 保洁 */ = {
+			isa = PBXGroup;
+			children = (
+				E45B0A321EADC870006D89BF /* model */,
+				E45B0A331EADC870006D89BF /* view */,
+				E45B0A341EADC870006D89BF /* viewcontorller */,
+			);
+			path = "保洁";
+			sourceTree = "<group>";
+		};
+		E45B0A311EADC3C9006D89BF /* 维修 */ = {
+			isa = PBXGroup;
+			children = (
+				E45B0A351EADC880006D89BF /* model */,
+				E45B0A361EADC880006D89BF /* view */,
+				E45B0A371EADC880006D89BF /* viewcontorller */,
+			);
+			path = "维修";
+			sourceTree = "<group>";
+		};
+		E45B0A321EADC870006D89BF /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E45B0A331EADC870006D89BF /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E45B0A341EADC870006D89BF /* viewcontorller */ = {
+			isa = PBXGroup;
+			children = (
+				E45B0A381EADC93E006D89BF /* QiangDanVC.h */,
+				E45B0A391EADC93E006D89BF /* QiangDanVC.m */,
+			);
+			path = viewcontorller;
+			sourceTree = "<group>";
+		};
+		E45B0A351EADC880006D89BF /* model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
+		E45B0A361EADC880006D89BF /* view */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		E45B0A371EADC880006D89BF /* viewcontorller */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = viewcontorller;
+			sourceTree = "<group>";
+		};
 		E45E82D91DDAD61900CC493B /* 报春晖 */ = {
 			isa = PBXGroup;
 			children = (
@@ -1621,82 +1770,12 @@
 		E45E83101DDAD61900CC493B /* 照护师 */ = {
 			isa = PBXGroup;
 			children = (
+				E45B0A301EADC3C9006D89BF /* 保洁 */,
+				E45B0A311EADC3C9006D89BF /* 维修 */,
 				E4AE1C251DE4559A002795BD /* viewContorller */,
-				E45E83111DDAD61900CC493B /* Category */,
-				E45E83131DDAD61900CC493B /* Model */,
-				E45E83141DDAD61900CC493B /* NerManager */,
-				E45E83151DDAD61900CC493B /* Resourse */,
-				E45E83161DDAD61900CC493B /* Tool */,
-				E45E83171DDAD61900CC493B /* Vendor */,
-				E45E83181DDAD61900CC493B /* View */,
-				E45E83191DDAD61900CC493B /* ViewContorller */,
-				E45E831A1DDAD61900CC493B /* ViewModel */,
 				E4089AE01DDC3A50005E7ED3 /* Nurse.storyboard */,
 			);
 			path = "照护师";
-			sourceTree = "<group>";
-		};
-		E45E83111DDAD61900CC493B /* Category */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Category;
-			sourceTree = "<group>";
-		};
-		E45E83131DDAD61900CC493B /* Model */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Model;
-			sourceTree = "<group>";
-		};
-		E45E83141DDAD61900CC493B /* NerManager */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = NerManager;
-			sourceTree = "<group>";
-		};
-		E45E83151DDAD61900CC493B /* Resourse */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Resourse;
-			sourceTree = "<group>";
-		};
-		E45E83161DDAD61900CC493B /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tool;
-			sourceTree = "<group>";
-		};
-		E45E83171DDAD61900CC493B /* Vendor */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Vendor;
-			sourceTree = "<group>";
-		};
-		E45E83181DDAD61900CC493B /* View */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = View;
-			sourceTree = "<group>";
-		};
-		E45E83191DDAD61900CC493B /* ViewContorller */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewContorller;
-			sourceTree = "<group>";
-		};
-		E45E831A1DDAD61900CC493B /* ViewModel */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = ViewModel;
 			sourceTree = "<group>";
 		};
 		E45E831B1DDAE51700CC493B /* 启动页 */ = {
@@ -1925,6 +2004,7 @@
 			files = (
 				E408D4011E2387980093A819 /* ShiPinCell.xib in Resources */,
 				E4233B861DDAA1990023D3DC /* LaunchScreen.storyboard in Resources */,
+				E458F90B1EA6FF72000D8B2F /* settingTVC.storyboard in Resources */,
 				E4127AA51DF5440100C20658 /* shopPingJiaView.xib in Resources */,
 				E4520DB61DE5B9520043C234 /* WeiboSDK.bundle in Resources */,
 				E4233B831DDAA1990023D3DC /* Assets.xcassets in Resources */,
@@ -1947,6 +2027,7 @@
 				E4127AA31DF5440100C20658 /* shopPingJiaCell.xib in Resources */,
 				E4AE1BCC1DE3E259002795BD /* LiveViewController.xib in Resources */,
 				E4520DAB1DE5B9520043C234 /* ShareSDKConfigFile.bundle in Resources */,
+				E458F9151EA705D3000D8B2F /* shouQuanCell.xib in Resources */,
 				E4520D7B1DE586DC0043C234 /* aboutViewController.xib in Resources */,
 				E4BF092E1DE2E2AB0075A746 /* LoginnViewController.xib in Resources */,
 				E46322171E6CFD8C00EB2D99 /* SMRZView.xib in Resources */,
@@ -2035,6 +2116,8 @@
 				E445F3201DF7FE7D00377343 /* SearchModel.m in Sources */,
 				E44CF4591DDD84AC00783CDB /* speach.m in Sources */,
 				E4233B7B1DDAA1990023D3DC /* ViewController.m in Sources */,
+				E458F9181EA73AF3000D8B2F /* shouQuanModel.m in Sources */,
+				E458F9061EA6FC7D000D8B2F /* settingTVC.m in Sources */,
 				E44ACBE21E0650D000426D8D /* searchTableViewCell.m in Sources */,
 				E40A75061DDB295100A30B81 /* AdNetWorking.m in Sources */,
 				E438318F1E9F152E0009BB09 /* JianKanggGuangBoVC.m in Sources */,
@@ -2071,6 +2154,7 @@
 				E4C2B30C1DFBE34600DB61A1 /* AddressCell.m in Sources */,
 				E40A74FC1DDB090F00A30B81 /* NSObject+Parse.m in Sources */,
 				E4520D7F1DE5927C0043C234 /* userModel.m in Sources */,
+				E458F9141EA705D3000D8B2F /* shouQuanCell.m in Sources */,
 				5D2D0F7C1E0D11F0003749F0 /* weiXiuDingDanController.m in Sources */,
 				E4233B811DDAA1990023D3DC /* BaoChunHui.xcdatamodeld in Sources */,
 				E4548A991E057D3A00878E23 /* DeliveryAddressCell.m in Sources */,
@@ -2106,6 +2190,7 @@
 				E4548A941E0578E000878E23 /* DeliveryAddressViewController.m in Sources */,
 				E44ACBDB1E0650D000426D8D /* addressViewController.m in Sources */,
 				E412B4E71DEBC5D2006EEFCF /* makeCall.m in Sources */,
+				E458F90E1EA703D9000D8B2F /* shouQuanTVC.m in Sources */,
 				5D2771E01E0CF22E00C3376A /* BaojieDingDanController.m in Sources */,
 				E4160C971DF904B600F0E7D4 /* GouWuCheViewController.m in Sources */,
 				E44ACBDC1E0650D000426D8D /* CollectionViewCell.m in Sources */,
@@ -2116,6 +2201,7 @@
 				E412B5081DEBFF24006EEFCF /* BaseViewModel.m in Sources */,
 				E4520D7A1DE586DC0043C234 /* aboutViewController.m in Sources */,
 				E46322131E6CFD6500EB2D99 /* SMRZView.m in Sources */,
+				E45B0A3A1EADC93E006D89BF /* QiangDanVC.m in Sources */,
 				E45E831E1DDAE65B00CC493B /* AdViewController.m in Sources */,
 				E4423DBE1E2510F100F7A2DA /* SearchRecoredVC.m in Sources */,
 				E4127AA61DF5440100C20658 /* ShopTableViewCell.m in Sources */,

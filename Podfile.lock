@@ -34,6 +34,7 @@ PODS:
   - BlocksKit/UIKit (2.2.5):
     - BlocksKit/Core
     - BlocksKit/DynamicDelegate
+  - CocoaAsyncSocket (7.6.0)
   - iCarousel (1.8.3)
   - Masonry (1.0.2)
   - MBProgressHUD (1.0.0)
@@ -51,6 +52,7 @@ DEPENDENCIES:
   - AMap3DMap
   - AMapLocation
   - BlocksKit
+  - CocoaAsyncSocket
   - iCarousel
   - Masonry
   - MBProgressHUD
@@ -65,6 +67,7 @@ SPEC CHECKSUMS:
   AMapFoundation: 458974f46a39df8407fd818ab83d2630d494c726
   AMapLocation: 6016f0e09c127461c9c8e36945f34c0f037ad962
   BlocksKit: 7f422b971407001178d181a43b99014ea2591fe6
+  CocoaAsyncSocket: b9d5589f07baf9de8f34cc25abd4fcba28f13805
   iCarousel: d782f635afac190c49bb8ee455882284cff8b85f
   Masonry: 7c429b56da9d4ee0bbb3ed77a5ea710d6a5df39e
   MBProgressHUD: 4890f671c94e8a0f3cf959aa731e9de2f036d71a
@@ -73,6 +76,6 @@ SPEC CHECKSUMS:
   SDWebImage: 76a6348bdc74eb5a55dd08a091ef298e56b55e41
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 23e9a8a878e35d41eb801978474dd71da68569fb
+PODFILE CHECKSUM: 9d07ee85e186ed4876b16a2e8192948a5b919905
 
 COCOAPODS: 1.1.1

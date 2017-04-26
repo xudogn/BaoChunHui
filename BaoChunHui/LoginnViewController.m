@@ -10,8 +10,8 @@
 #import "RegistViewController.h"
 #import "OlePeopleTabBarViewController.h"
 #import "FamilyTabBarViewController.h"
-
-
+#import "ViewController.h"
+#import "NurseTabBarViewController.h"
 
 
 
@@ -34,7 +34,12 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    
+    self.navigationItem.title = @"登录";
+    kSetNaviBarItemTitleFontAndColor
+    
+    self.loginBtn.layer.cornerRadius = 5;
+    self.loginBtn.layer.masksToBounds = YES;
 }
 
 
@@ -141,20 +146,24 @@
         case PartOfCareStation:
             //照护站
         {
+            
+            
             NSNumber *obviousModule = [NSNumber numberWithInteger:PartOfCareStation];
             [[NSUserDefaults standardUserDefaults] setObject:obviousModule forKey:@"obviousModule"];
         }
             break;
         case PartOfService:
-            //服务站
+            //个人，照护师端
         {
-            
+            NurseTabBarViewController *vc = [[NurseTabBarViewController alloc] init];
+            AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            delegate.window.rootViewController = vc;
             NSNumber *obviousModule = [NSNumber numberWithInteger:PartOfService];
             [[NSUserDefaults standardUserDefaults] setObject:obviousModule forKey:@"obviousModule"];
         }
             break;
         case PartOf5:
-            //
+            //服务机构端
         {
             UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
             layout.minimumLineSpacing = 1;
@@ -188,7 +197,9 @@
 
 
 - (IBAction)cancelBtn:(id)sender {
-    [self dismissViewControllerAnimated:YES completion:nil];
+    ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"mainModule"];
+    AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+    delegate.window.rootViewController = vc;
 }
 
 - (IBAction)registerBtn:(id)sender {

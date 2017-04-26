@@ -7,8 +7,8 @@
 //
 
 #import "ViewController.h"
-
 #import "LoginnViewController.h"
+#import "AppDelegate.h"
 
 @interface ViewController ()
 
@@ -58,9 +58,9 @@
         
         LoginnViewController *loginVC = [[LoginnViewController alloc] initWithNibName:@"LoginnViewController" bundle:nil Module:sender.tag];
         UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:loginVC];
-        [self presentViewController:navi animated:YES completion:nil];
-        
-        
+        navi.navigationBar.backgroundColor = [UIColor colorWithR:48 g:206 b:185 alpha:1];
+        AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        delegate.window.rootViewController = navi;
         
         
     }

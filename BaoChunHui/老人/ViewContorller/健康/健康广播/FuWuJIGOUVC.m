@@ -8,6 +8,8 @@
 
 #import "FuWuJIGOUVC.h"
 #import "jianKangJiGouCell.h"
+#import "AppDelegate.h"
+#import "ViewController.h"
 
 @interface FuWuJIGOUVC ()
 
@@ -65,7 +67,7 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath {
     jianKangJiGouCell *cell = [collectionView dequeueReusableCellWithReuseIdentifier:reuseIdentifier forIndexPath:indexPath];
-    NSArray<NSString *> *arr = @[@"政府民政老龄办",@"全国社区助老工程",@"养老机构",@"社区托老",@"家政公司",@"旅游公司",@"律师事务所",@"老年产品生产商",@"志愿者组织", @"返回"];
+    NSArray<NSString *> *arr = @[@"政府民政老龄办",@"全国社区助老工程",@"养老机构",@"社区托老",@"家政公司",@"旅游公司",@"律师事务所",@"老年产品生产商",@"志愿者组织", @"角色切换"];
     cell.name.text = arr[indexPath.row];
     cell.imgV.image = [UIImage imageNamed:@"zhaohu_nursing"];
     cell.backgroundColor = [UIColor whiteColor];
@@ -76,7 +78,9 @@ static NSString * const reuseIdentifier = @"Cell";
 
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
     if (indexPath.row == 9) {
-        [self dismissViewControllerAnimated:YES completion:nil];
+        ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"mainModule"];
+        AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+        delegate.window.rootViewController = vc;
     }
 }
 
