@@ -7,6 +7,11 @@
 //
 
 #import "RegistViewController.h"
+#import "OlePeopleTabBarViewController.h"
+#import "FamilyTabBarViewController.h"
+
+#import "AppDelegate.h"
+#import "FuWuJIGOUVC.h"
 
 @interface RegistViewController ()
 
@@ -31,7 +36,11 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view from its nib.
+    self.navigationItem.title = @"注册";
+    kSetNaviBarItemTitleFontAndColor
+    
+    self.registerBtn.layer.cornerRadius = 5;
+    self.registerBtn.layer.masksToBounds = YES;
 }
 
 
@@ -172,6 +181,67 @@
 }
 
 
+- (IBAction)guestLogin:(id)sender {
+    switch (_module) {
+        case PartOfOldPeople:{
+            //老人
+            OlePeopleTabBarViewController *vc = [[OlePeopleTabBarViewController alloc] init];
+            AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            delegate.window.rootViewController = vc;
+            
+            [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:PartOfOldPeople] forKey:@"obviousModule"];
+            
+            
+            
+        }
+            break;
+        case PartOfFamily:
+            //家属
+        {
+            FamilyTabBarViewController *vc = [[FamilyTabBarViewController alloc] init];
+            AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            delegate.window.rootViewController = vc;
+            
+            [[NSUserDefaults standardUserDefaults] setObject:[NSNumber numberWithInteger:PartOfFamily] forKey:@"obviousModule"];
+        }
+            break;
+        case PartOfCareStation:
+            //照护站
+        {
+            NSNumber *obviousModule = [NSNumber numberWithInteger:PartOfCareStation];
+            [[NSUserDefaults standardUserDefaults] setObject:obviousModule forKey:@"obviousModule"];
+        }
+            break;
+        case PartOfService:
+            //服务站
+        {
+            
+            NSNumber *obviousModule = [NSNumber numberWithInteger:PartOfService];
+            [[NSUserDefaults standardUserDefaults] setObject:obviousModule forKey:@"obviousModule"];
+        }
+            break;
+        case PartOf5:
+            //
+        {
+            UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+            layout.minimumLineSpacing = 1;
+            layout.minimumInteritemSpacing = 1;
+            layout.sectionInset = UIEdgeInsetsMake(1, 1, 1, 1);
+            layout.itemSize = CGSizeMake((kScreenW - 3)/2.0, 100);
+            FuWuJIGOUVC *vc = [[FuWuJIGOUVC alloc] initWithCollectionViewLayout:layout];
+            UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+            [self presentViewController:navi animated:YES completion:nil];
+        }
+        {
+            
+        }
+            break;
+            
+        default:
+            //
+            break;
+    }
+}
 
 
 

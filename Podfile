@@ -18,7 +18,7 @@ pod ‘MBProgressHUD’
 pod ‘iCarousel’
 pod 'AMap3DMap'
 pod 'AMapLocation'
-
+pod 'CocoaAsyncSocket'  
 
 
 end

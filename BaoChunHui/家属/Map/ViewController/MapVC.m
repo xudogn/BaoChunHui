@@ -26,6 +26,7 @@
     [super viewDidLoad];
     self.navigationController.navigationBar.hidden = YES;
     [self configMapView];
+    /*
     if ([CLLocationManager locationServicesEnabled] && ([CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorizedWhenInUse || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusNotDetermined || [CLLocationManager authorizationStatus] == kCLAuthorizationStatusAuthorized)) {
         
         //定位功能可用
@@ -34,7 +35,7 @@
         
         //定位不能用
         
-    }
+    }*/
     
 }
 

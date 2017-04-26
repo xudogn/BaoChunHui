@@ -7,16 +7,17 @@
 //
 
 #import "MineTableViewController.h"
-
+#import "AppDelegate.h"
 #import "certifyViewController.h"
 #import "ShiMingRenZhengVC.h"
 
 #import "CardTableViewController.h"
 #import "scoreShopViewController.h"
+#import "shangChengVC.h"
 #import "aboutViewController.h"
 #import "ViewController.h"
-
-
+#import "settingTVC.h"
+#import "GouWuCheViewController.h"
 #import <ShareSDK/ShareSDK.h>
 #import <ShareSDKUI/ShareSDK+SSUI.h>
 
@@ -63,10 +64,10 @@
             return 2;
             break;
         case 1:
-            return 3;
+            return 2;
             break;
         case 2:
-            return 2;
+            return 4;
             break;
         default:
             return 0;
@@ -80,6 +81,28 @@
         case 0:
             switch (indexPath.row) {
                 case 0:
+#warning 订单   添加
+                    // 生活订单
+                {
+                    GouWuCheViewController *gwcVC = [[GouWuCheViewController alloc] initWithStyle:UITableViewStyleGrouped ViewContorllerType:0];
+                    [self.navigationController pushViewController:gwcVC animated:YES];
+                }
+                    break;
+                case 1:
+                    // 照护订单
+                {
+                    GouWuCheViewController *gwcVC = [[GouWuCheViewController alloc] initWithStyle:UITableViewStyleGrouped ViewContorllerType:0];
+                    [self.navigationController pushViewController:gwcVC animated:YES];
+                }
+                    break;
+                    
+                default:
+                    break;
+            }
+            break;
+        case 1:
+            switch (indexPath.row) {
+                case 0:
                 {
                     CardTableViewController *vc = [[CardTableViewController alloc] initWithNibName:@"CardTableViewController" bundle:nil];
                     [self.navigationController pushViewController:vc animated:YES];
@@ -91,7 +114,7 @@
                     break;
             }
             break;
-        case 1:
+        case 2:
             switch (indexPath.row) {
                 case 0:
                     // 分享
@@ -100,7 +123,7 @@
                 case 1:
                     // 积分
                 {
-                    scoreShopViewController *vc = [[scoreShopViewController alloc] init];
+                    shangChengVC *vc = [[shangChengVC alloc] initWithViewContorllerType:ViewControllerType_shangCheng];
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                     break;
@@ -113,31 +136,18 @@
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                     break;
-                default:
-                    break;
-            }
-            break;
-        case 2:
-            switch (indexPath.row) {
-                case 0:
-                    // 切换
+                    case 3:
                 {
-                    ViewController *vc = [[UIStoryboard storyboardWithName:@"Main" bundle:nil] instantiateViewControllerWithIdentifier:@"mainModule"];
-                    [self.navigationController presentViewController:vc animated:YES completion:nil];
-                }
-                    break;
-                case 1:
-                    // 关于
-                {
-                    aboutViewController *vc = [[aboutViewController alloc] initWithNibName:@"aboutViewController" bundle:nil];
+                    // 设置
+                    settingTVC *vc = [UIStoryboard storyboardWithName:@"settingTVC" bundle:nil].instantiateInitialViewController;
                     [self.navigationController pushViewController:vc animated:YES];
                 }
                     break;
-                
                 default:
                     break;
             }
             break;
+        
             
         default:
             break;
