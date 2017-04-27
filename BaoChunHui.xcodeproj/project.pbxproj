@@ -90,6 +90,10 @@
 		E4423DBA1E250DBF00F7A2DA /* AVViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E4423DB71E250DBF00F7A2DA /* AVViewController.m */; };
 		E4423DBB1E250DBF00F7A2DA /* VideoView.m in Sources */ = {isa = PBXBuildFile; fileRef = E4423DB91E250DBF00F7A2DA /* VideoView.m */; };
 		E4423DBE1E2510F100F7A2DA /* SearchRecoredVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E4423DBD1E2510F100F7A2DA /* SearchRecoredVC.m */; };
+		E44381DB1EB0875D00E2865A /* QiangDanCell.m in Sources */ = {isa = PBXBuildFile; fileRef = E44381D91EB0875D00E2865A /* QiangDanCell.m */; };
+		E44381DC1EB0875D00E2865A /* QiangDanCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44381DA1EB0875D00E2865A /* QiangDanCell.xib */; };
+		E44381E01EB09B2F00E2865A /* QiangDanDetailVC.m in Sources */ = {isa = PBXBuildFile; fileRef = E44381DE1EB09B2F00E2865A /* QiangDanDetailVC.m */; };
+		E44381E11EB09B2F00E2865A /* QiangDanDetailVC.xib in Resources */ = {isa = PBXBuildFile; fileRef = E44381DF1EB09B2F00E2865A /* QiangDanDetailVC.xib */; };
 		E445F3161DF7A50E00377343 /* BCHTool.m in Sources */ = {isa = PBXBuildFile; fileRef = E445F3151DF7A50E00377343 /* BCHTool.m */; };
 		E445F31A1DF7AD9900377343 /* SearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = E445F3191DF7AD9900377343 /* SearchViewController.m */; };
 		E445F3201DF7FE7D00377343 /* SearchModel.m in Sources */ = {isa = PBXBuildFile; fileRef = E445F31F1DF7FE7D00377343 /* SearchModel.m */; };
@@ -363,6 +367,12 @@
 		E4423DB91E250DBF00F7A2DA /* VideoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoView.m; sourceTree = "<group>"; };
 		E4423DBC1E2510F100F7A2DA /* SearchRecoredVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchRecoredVC.h; sourceTree = "<group>"; };
 		E4423DBD1E2510F100F7A2DA /* SearchRecoredVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SearchRecoredVC.m; sourceTree = "<group>"; };
+		E44381D81EB0875D00E2865A /* QiangDanCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiangDanCell.h; sourceTree = "<group>"; };
+		E44381D91EB0875D00E2865A /* QiangDanCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiangDanCell.m; sourceTree = "<group>"; };
+		E44381DA1EB0875D00E2865A /* QiangDanCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QiangDanCell.xib; sourceTree = "<group>"; };
+		E44381DD1EB09B2F00E2865A /* QiangDanDetailVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QiangDanDetailVC.h; sourceTree = "<group>"; };
+		E44381DE1EB09B2F00E2865A /* QiangDanDetailVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QiangDanDetailVC.m; sourceTree = "<group>"; };
+		E44381DF1EB09B2F00E2865A /* QiangDanDetailVC.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = QiangDanDetailVC.xib; sourceTree = "<group>"; };
 		E445F3141DF7A50E00377343 /* BCHTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BCHTool.h; sourceTree = "<group>"; };
 		E445F3151DF7A50E00377343 /* BCHTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BCHTool.m; sourceTree = "<group>"; };
 		E445F3181DF7AD9900377343 /* SearchViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchViewController.h; sourceTree = "<group>"; };
@@ -1516,6 +1526,9 @@
 		E45B0A331EADC870006D89BF /* view */ = {
 			isa = PBXGroup;
 			children = (
+				E44381D81EB0875D00E2865A /* QiangDanCell.h */,
+				E44381D91EB0875D00E2865A /* QiangDanCell.m */,
+				E44381DA1EB0875D00E2865A /* QiangDanCell.xib */,
 			);
 			path = view;
 			sourceTree = "<group>";
@@ -1525,6 +1538,9 @@
 			children = (
 				E45B0A381EADC93E006D89BF /* QiangDanVC.h */,
 				E45B0A391EADC93E006D89BF /* QiangDanVC.m */,
+				E44381DD1EB09B2F00E2865A /* QiangDanDetailVC.h */,
+				E44381DE1EB09B2F00E2865A /* QiangDanDetailVC.m */,
+				E44381DF1EB09B2F00E2865A /* QiangDanDetailVC.xib */,
 			);
 			path = viewcontorller;
 			sourceTree = "<group>";
@@ -2006,6 +2022,7 @@
 				E4233B861DDAA1990023D3DC /* LaunchScreen.storyboard in Resources */,
 				E458F90B1EA6FF72000D8B2F /* settingTVC.storyboard in Resources */,
 				E4127AA51DF5440100C20658 /* shopPingJiaView.xib in Resources */,
+				E44381E11EB09B2F00E2865A /* QiangDanDetailVC.xib in Resources */,
 				E4520DB61DE5B9520043C234 /* WeiboSDK.bundle in Resources */,
 				E4233B831DDAA1990023D3DC /* Assets.xcassets in Resources */,
 				E4520DBB1DE5B9520043C234 /* ShareSDK.bundle in Resources */,
@@ -2027,6 +2044,7 @@
 				E4127AA31DF5440100C20658 /* shopPingJiaCell.xib in Resources */,
 				E4AE1BCC1DE3E259002795BD /* LiveViewController.xib in Resources */,
 				E4520DAB1DE5B9520043C234 /* ShareSDKConfigFile.bundle in Resources */,
+				E44381DC1EB0875D00E2865A /* QiangDanCell.xib in Resources */,
 				E458F9151EA705D3000D8B2F /* shouQuanCell.xib in Resources */,
 				E4520D7B1DE586DC0043C234 /* aboutViewController.xib in Resources */,
 				E4BF092E1DE2E2AB0075A746 /* LoginnViewController.xib in Resources */,
@@ -2127,6 +2145,7 @@
 				E4BF092D1DE2E2AB0075A746 /* LoginnViewController.m in Sources */,
 				E4FA1F2E1DFFD58F000563CD /* goodsDetailViewController.m in Sources */,
 				E44ACBDA1E0650D000426D8D /* zuDaoViewModel.m in Sources */,
+				E44381DB1EB0875D00E2865A /* QiangDanCell.m in Sources */,
 				E4474F251E272AEA0032CAFB /* VideoSearchResuleVC.m in Sources */,
 				E46322501E6E9FE000EB2D99 /* HelpButton.m in Sources */,
 				E44ACBD21E0650D000426D8D /* dingDanTableViewCell.m in Sources */,
@@ -2187,6 +2206,7 @@
 				E44ACBCE1E0650D000426D8D /* peiHuDingDanViewController.m in Sources */,
 				E438318C1E9F119F0009BB09 /* JianKangShiPinVC.m in Sources */,
 				E4233B781DDAA1990023D3DC /* AppDelegate.m in Sources */,
+				E44381E01EB09B2F00E2865A /* QiangDanDetailVC.m in Sources */,
 				E4548A941E0578E000878E23 /* DeliveryAddressViewController.m in Sources */,
 				E44ACBDB1E0650D000426D8D /* addressViewController.m in Sources */,
 				E412B4E71DEBC5D2006EEFCF /* makeCall.m in Sources */,

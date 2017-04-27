@@ -16,6 +16,8 @@
 #import "peiHuCollectionViewController.h"
 //#import "peiHuViewController.h"
 #import "SCWeixiuViewController.h"
+#import "shangChengVC.h"
+
 
 #define kScreenW ([UIScreen mainScreen].bounds.size.width)
 @interface zhaoHuViewController ()<UICollectionViewDelegateFlowLayout,iCarouselDelegate,iCarouselDataSource>
@@ -106,6 +108,10 @@
 - (IBAction)bianLiStore:(id)sender {
 //    bianLiViewController *vc = [[bianLiViewController alloc] init];
 //    [self.navigationController pushViewController:vc animated:YES];
+    
+    shangChengVC *vc = [[shangChengVC alloc] initWithViewContorllerType:ViewControllerType_bianLiDian];
+    [self.navigationController pushViewController:vc animated:YES];
+    
 }
 - (IBAction)foot:(id)sender {
     self.hidesBottomBarWhenPushed = YES;

@@ -12,8 +12,8 @@
 #define kMainWidth [UIScreen mainScreen].bounds.size.width
 #define kMainHeight [UIScreen mainScreen].bounds.size.height
 
-#define kHelpBtnWidth 60
-#define kHelpBtnHeight 60
+#define kHelpBtnWidth 40
+#define kHelpBtnHeight 40
 
 @interface HelpButton ()
 @property (nonatomic, strong) UIButton *btn;
@@ -25,7 +25,7 @@
 
 
 - (instancetype)initWithFrame:(CGRect)frame{
-    CGRect f = CGRectMake(kMainWidth - kHelpBtnWidth - 8, 12, kHelpBtnWidth, kHelpBtnHeight);
+    CGRect f = CGRectMake(kMainWidth - kHelpBtnWidth - 8, 20, kHelpBtnWidth, kHelpBtnHeight);
     self = [super initWithFrame:f];
     if (self) {
         
@@ -45,7 +45,7 @@
 - (void)addHelpBtn{
     _btn = [UIButton buttonWithType:UIButtonTypeCustom];
     _btn.frame = CGRectMake(0, 0, kHelpBtnWidth, kHelpBtnHeight);
-    [_btn setImage:[UIImage imageNamed:@"con_phone"] forState:UIControlStateNormal];
+    [_btn setImage:[UIImage imageNamed:@"list_phone"] forState:UIControlStateNormal];// btn_aid
     [_btn addTarget:self action:@selector(helpBtnClicked) forControlEvents:UIControlEventTouchUpInside];
     _btn.imageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.rootViewController.view addSubview:_btn];
