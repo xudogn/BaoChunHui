@@ -15,6 +15,11 @@
 //自动为控制器添加右上角的搜索按钮UI
 + (void)addSearchItemForVC:(UIViewController *)vc clickedHandler:(void(^)())handler;
 
+//添加信息收藏按钮
++ (void)addCollectInfoForVC:(UIViewController *)vc clickedHandler:(void(^)())handler;
+
+//添加alertview
++ (void)addAlertViewForVC:(UIViewController *)vc clickedHandler:(void(^)())handler;
 @end
 
 

@@ -1,20 +1,22 @@
 //
-//  peiHuCollectionViewController.m
-//  zhaoHuDemo
+//  jiuYiCollectionViewController.m
+//  BaoChunHui
 //
-//  Created by BCH on 2016/12/16.
-//  Copyright © 2016年 BCH. All rights reserved.
+//  Created by BCH on 2017/4/13.
+//  Copyright © 2017年 xudogn. All rights reserved.
 //
 
-#import "peiHuCollectionViewController.h"
+#import "jiuYiCollectionViewController.h"
 #import "zuDaoCollectionViewCell.h"
 #import "iCarousel.h"
 #import "HWDatePicker.h"
 #import "informationView.h"
 #import "addressViewController.h"
-#import "peiHuDingDanViewController.h"
+#import "jiuYiViewController.h"
 
-@interface peiHuCollectionViewController ()<HWDatePickerDelegate,UITextFieldDelegate,informationViewDelegate>
+
+
+@interface jiuYiCollectionViewController ()<HWDatePickerDelegate,UITextFieldDelegate,informationViewDelegate>
 @property (nonatomic) zuDaoCollectionViewCell *cell;
 @property (nonatomic) UIView *icShowView;
 //@property (nonatomic) iCarousel *ic;
@@ -32,7 +34,7 @@
 @property (nonatomic) UIView *grayView;
 @end
 
-@implementation peiHuCollectionViewController
+@implementation jiuYiCollectionViewController
 - (UITextField *)dateTextField {
     if (!_dateTextField) {
         _dateTextField = [[UITextField alloc] init];
@@ -43,7 +45,7 @@
             make.width.equalTo(250);
             make.height.equalTo(30);
         }];
-        _dateTextField.placeholder = @"服务时间";
+        _dateTextField.placeholder = @"服务开始时间";
         _dateTextField.font = [UIFont systemFontOfSize:25];
         _dateTextField.delegate = self;
         //选择器
@@ -70,7 +72,7 @@
     
 }
 - (void)viewWillAppear:(BOOL)animated {
-    self.navigationController.navigationBar.barTintColor = kRGBA(16, 166, 226, 1);
+    self.navigationController.navigationBar.barTintColor = kRGBA(34, 167, 224, 1);
 }
 - (void)viewWillDisappear:(BOOL)animated {
     self.navigationController.navigationBar.barTintColor = kRGBA(48, 206, 185, 1);
@@ -78,7 +80,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [TRFactory addBackItemForVC:self];
-    self.navigationItem.title = @"医养结合";
+    self.navigationItem.title = @"就医陪护";
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerClass:[zuDaoCollectionViewCell class] forCellWithReuseIdentifier:@"otherCell"];
     [self grayView1];
@@ -103,16 +105,18 @@
     }
     return _infoView;
 }
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+#pragma mark <UICollectionViewDataSource>
+
 - (NSInteger)numberOfSectionsInCollectionView:(UICollectionView *)collectionView {
-    
     return 1;
 }
-
 - (NSInteger)collectionView:(UICollectionView *)collectionView numberOfItemsInSection:(NSInteger)section {
-    
     return 4;
 }
-
 - (CGSize)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout *)collectionViewLayout sizeForItemAtIndexPath:(NSIndexPath *)indexPath {
     
     CGFloat width = (kScreenW - 34) / 2;
@@ -134,7 +138,7 @@
     cell.selectedBackgroundView = cell.maskView;
     //改变成网络获取数据
     cell.typeLb.text = @"4小时内";
-    cell.payLb.text = @"￥100.00";
+    cell.payLb.text = @"￥120.00";
     cell.payLb.textAlignment = NSTextAlignmentCenter;
     cell.typeLb.textAlignment = NSTextAlignmentCenter;
     cell.layer.borderWidth = 1;
@@ -143,7 +147,7 @@
     return cell;
 }
 - (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath {
-    _infoView.priceLb.text = @"￥100.00";
+    _infoView.priceLb.text = @"￥120.00";
 }
 - (UIView *)grayView1 {
     if (!_grayView1) {
@@ -165,7 +169,7 @@
     if (!_icShowView) {
         _icShowView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, 112)];
         [self.collectionView addSubview:_icShowView];
-        _icShowView.backgroundColor = kRGBA(16, 166, 226, 1);
+        _icShowView.backgroundColor = kRGBA(34, 167, 224, 1);
         
         UILabel *typeLb = [[UILabel alloc] init];
         [self.collectionView addSubview:typeLb];
@@ -190,11 +194,24 @@
             make.width.equalTo(kScreenW * 0.5);
         }];
         _phoneButton.backgroundColor = [UIColor whiteColor];
-        [_phoneButton setTitleColor:kRGBA(16, 166, 226, 1) forState:UIControlStateNormal];
+        [_phoneButton setTitleColor:kRGBA(34, 167, 224, 1) forState:UIControlStateNormal];
         [_phoneButton setTitle:@"电话预定" forState:UIControlStateNormal];
         _phoneButton.titleLabel.font = [UIFont systemFontOfSize:30];
+        
+         [_phoneButton addTarget:self action:@selector(tanView) forControlEvents:UIControlEventTouchUpInside];
     }
     return _phoneButton;
+}
+- (void)tanView {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"拨打电话" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    
+    [alert addAction:[UIAlertAction actionWithTitle:@"10004" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"点击了电话");
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"点击了取消");
+    }]];
+    [self presentViewController:alert animated:YES completion:nil];
 }
 - (UIButton *)onlineButton {
     if (!_onlineButton) {
@@ -207,7 +224,7 @@
         }];
         [_onlineButton setTitle:@"立即下单" forState:UIControlStateNormal];
         [_onlineButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
-        _onlineButton.backgroundColor = kRGBA(16, 166, 226, 1);
+        _onlineButton.backgroundColor = kRGBA(34, 167, 224, 1);
         _onlineButton.titleLabel.font = [UIFont systemFontOfSize:30];
         [_onlineButton addTarget:self action:@selector(btnClicked) forControlEvents:UIControlEventTouchUpInside];
     }
@@ -216,7 +233,7 @@
 
 - (void)btnClicked {
     self.hidesBottomBarWhenPushed = YES;
-    peiHuDingDanViewController *vc = [[peiHuDingDanViewController alloc] init];
+    jiuYiViewController *vc = [[jiuYiViewController alloc] init];
     [self.navigationController pushViewController:vc animated:YES];
 }
 - (BOOL)textFieldShouldBeginEditing:(UITextField *)textField {
@@ -238,16 +255,10 @@
     _dateTextField.text = date;
 }
 - (void)datePickerView:(HWDatePicker *)datePickerView showCancleBtn:(UIButton *)btn {
-    [btn setTitleColor:kRGBA(16, 166, 226, 1) forState:UIControlStateNormal];
+    [btn setTitleColor:kRGBA(34, 167, 224, 1) forState:UIControlStateNormal];
 }
 - (void)datePickerView:(HWDatePicker *)datePickerView showSureBtn:(UIButton *)btn {
-    [btn setTitleColor:kRGBA(16, 166, 226, 1) forState:UIControlStateNormal];
+    [btn setTitleColor:kRGBA(34, 167, 224, 1) forState:UIControlStateNormal];
 }
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
-}
-
-
 
 @end

@@ -16,6 +16,19 @@
 		5D2CF1291E0A6C09003A6F01 /* BaseNetworking.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2CF1281E0A6C09003A6F01 /* BaseNetworking.m */; };
 		5D2D0F7C1E0D11F0003749F0 /* weiXiuDingDanController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2D0F7B1E0D11F0003749F0 /* weiXiuDingDanController.m */; };
 		5D2D0F7F1E0D1979003749F0 /* SCQiangDanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D2D0F7E1E0D1979003749F0 /* SCQiangDanView.m */; };
+		5D30B7471EB08B71000FD215 /* SCCommunityViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B7461EB08B71000FD215 /* SCCommunityViewController.m */; };
+		5D30B74A1EB08BA9000FD215 /* SCCommunityViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B7491EB08BA9000FD215 /* SCCommunityViewCell.m */; };
+		5D30B74D1EB08BE3000FD215 /* SCInfoCollectController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B74C1EB08BE3000FD215 /* SCInfoCollectController.m */; };
+		5D30B7501EB08C1A000FD215 /* SCWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B74F1EB08C1A000FD215 /* SCWebViewController.m */; };
+		5D30B7731EB0923A000FD215 /* Clock.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B7671EB0923A000FD215 /* Clock.m */; };
+		5D30B7741EB0923A000FD215 /* Data.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B7691EB0923A000FD215 /* Data.m */; };
+		5D30B7751EB0923A000FD215 /* MiShuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B76B1EB0923A000FD215 /* MiShuViewController.m */; };
+		5D30B7761EB0923A000FD215 /* SCTanView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B76D1EB0923A000FD215 /* SCTanView.m */; };
+		5D30B7771EB0923A000FD215 /* TianjiaAlertViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B76F1EB0923A000FD215 /* TianjiaAlertViewController.m */; };
+		5D30B7781EB0923A000FD215 /* TianjiaAlertViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D30B7701EB0923A000FD215 /* TianjiaAlertViewController.xib */; };
+		5D30B7791EB0923A000FD215 /* XiaoMiShuTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B7721EB0923A000FD215 /* XiaoMiShuTableViewCell.m */; };
+		5D30B77F1EB09705000FD215 /* jiuYiCollectionViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B77C1EB09705000FD215 /* jiuYiCollectionViewController.m */; };
+		5D30B7801EB09705000FD215 /* jiuYiViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D30B77E1EB09705000FD215 /* jiuYiViewController.m */; };
 		5D4540D91E06596E003FDE1A /* BaiduMapAPI_Base.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4540D11E06596E003FDE1A /* BaiduMapAPI_Base.framework */; };
 		5D4540DA1E06596E003FDE1A /* BaiduMapAPI_Cloud.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4540D21E06596E003FDE1A /* BaiduMapAPI_Cloud.framework */; };
 		5D4540DB1E06596E003FDE1A /* BaiduMapAPI_Location.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4540D31E06596E003FDE1A /* BaiduMapAPI_Location.framework */; };
@@ -241,6 +254,31 @@
 		5D2D0F7B1E0D11F0003749F0 /* weiXiuDingDanController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = weiXiuDingDanController.m; sourceTree = "<group>"; };
 		5D2D0F7D1E0D1979003749F0 /* SCQiangDanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCQiangDanView.h; sourceTree = "<group>"; };
 		5D2D0F7E1E0D1979003749F0 /* SCQiangDanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCQiangDanView.m; sourceTree = "<group>"; };
+		5D30B7451EB08B71000FD215 /* SCCommunityViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCommunityViewController.h; sourceTree = "<group>"; };
+		5D30B7461EB08B71000FD215 /* SCCommunityViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCommunityViewController.m; sourceTree = "<group>"; };
+		5D30B7481EB08BA9000FD215 /* SCCommunityViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCCommunityViewCell.h; sourceTree = "<group>"; };
+		5D30B7491EB08BA9000FD215 /* SCCommunityViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCCommunityViewCell.m; sourceTree = "<group>"; };
+		5D30B74B1EB08BE3000FD215 /* SCInfoCollectController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCInfoCollectController.h; sourceTree = "<group>"; };
+		5D30B74C1EB08BE3000FD215 /* SCInfoCollectController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCInfoCollectController.m; sourceTree = "<group>"; };
+		5D30B74E1EB08C1A000FD215 /* SCWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCWebViewController.h; sourceTree = "<group>"; };
+		5D30B74F1EB08C1A000FD215 /* SCWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCWebViewController.m; sourceTree = "<group>"; };
+		5D30B7661EB0923A000FD215 /* Clock.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Clock.h; sourceTree = "<group>"; };
+		5D30B7671EB0923A000FD215 /* Clock.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Clock.m; sourceTree = "<group>"; };
+		5D30B7681EB0923A000FD215 /* Data.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Data.h; sourceTree = "<group>"; };
+		5D30B7691EB0923A000FD215 /* Data.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Data.m; sourceTree = "<group>"; };
+		5D30B76A1EB0923A000FD215 /* MiShuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MiShuViewController.h; sourceTree = "<group>"; };
+		5D30B76B1EB0923A000FD215 /* MiShuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MiShuViewController.m; sourceTree = "<group>"; };
+		5D30B76C1EB0923A000FD215 /* SCTanView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCTanView.h; sourceTree = "<group>"; };
+		5D30B76D1EB0923A000FD215 /* SCTanView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCTanView.m; sourceTree = "<group>"; };
+		5D30B76E1EB0923A000FD215 /* TianjiaAlertViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TianjiaAlertViewController.h; sourceTree = "<group>"; };
+		5D30B76F1EB0923A000FD215 /* TianjiaAlertViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TianjiaAlertViewController.m; sourceTree = "<group>"; };
+		5D30B7701EB0923A000FD215 /* TianjiaAlertViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TianjiaAlertViewController.xib; sourceTree = "<group>"; };
+		5D30B7711EB0923A000FD215 /* XiaoMiShuTableViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XiaoMiShuTableViewCell.h; sourceTree = "<group>"; };
+		5D30B7721EB0923A000FD215 /* XiaoMiShuTableViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XiaoMiShuTableViewCell.m; sourceTree = "<group>"; };
+		5D30B77B1EB09705000FD215 /* jiuYiCollectionViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jiuYiCollectionViewController.h; sourceTree = "<group>"; };
+		5D30B77C1EB09705000FD215 /* jiuYiCollectionViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jiuYiCollectionViewController.m; sourceTree = "<group>"; };
+		5D30B77D1EB09705000FD215 /* jiuYiViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = jiuYiViewController.h; sourceTree = "<group>"; };
+		5D30B77E1EB09705000FD215 /* jiuYiViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = jiuYiViewController.m; sourceTree = "<group>"; };
 		5D4540D11E06596E003FDE1A /* BaiduMapAPI_Base.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Base.framework; sourceTree = "<group>"; };
 		5D4540D21E06596E003FDE1A /* BaiduMapAPI_Cloud.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Cloud.framework; sourceTree = "<group>"; };
 		5D4540D31E06596E003FDE1A /* BaiduMapAPI_Location.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Location.framework; sourceTree = "<group>"; };
@@ -690,6 +728,52 @@
 				5D2CF1251E0A22EC003A6F01 /* zhaoHuNetManager.m */,
 			);
 			path = NetManager;
+			sourceTree = "<group>";
+		};
+		5D30B7381EB08940000FD215 /* 社区 */ = {
+			isa = PBXGroup;
+			children = (
+				5D30B7451EB08B71000FD215 /* SCCommunityViewController.h */,
+				5D30B7461EB08B71000FD215 /* SCCommunityViewController.m */,
+				5D30B7481EB08BA9000FD215 /* SCCommunityViewCell.h */,
+				5D30B7491EB08BA9000FD215 /* SCCommunityViewCell.m */,
+				5D30B74B1EB08BE3000FD215 /* SCInfoCollectController.h */,
+				5D30B74C1EB08BE3000FD215 /* SCInfoCollectController.m */,
+				5D30B74E1EB08C1A000FD215 /* SCWebViewController.h */,
+				5D30B74F1EB08C1A000FD215 /* SCWebViewController.m */,
+			);
+			path = "社区";
+			sourceTree = "<group>";
+		};
+		5D30B7511EB0906A000FD215 /* 小秘书 */ = {
+			isa = PBXGroup;
+			children = (
+				5D30B7661EB0923A000FD215 /* Clock.h */,
+				5D30B7671EB0923A000FD215 /* Clock.m */,
+				5D30B7681EB0923A000FD215 /* Data.h */,
+				5D30B7691EB0923A000FD215 /* Data.m */,
+				5D30B76A1EB0923A000FD215 /* MiShuViewController.h */,
+				5D30B76B1EB0923A000FD215 /* MiShuViewController.m */,
+				5D30B76C1EB0923A000FD215 /* SCTanView.h */,
+				5D30B76D1EB0923A000FD215 /* SCTanView.m */,
+				5D30B76E1EB0923A000FD215 /* TianjiaAlertViewController.h */,
+				5D30B76F1EB0923A000FD215 /* TianjiaAlertViewController.m */,
+				5D30B7701EB0923A000FD215 /* TianjiaAlertViewController.xib */,
+				5D30B7711EB0923A000FD215 /* XiaoMiShuTableViewCell.h */,
+				5D30B7721EB0923A000FD215 /* XiaoMiShuTableViewCell.m */,
+			);
+			path = "小秘书";
+			sourceTree = "<group>";
+		};
+		5D30B77A1EB096E6000FD215 /* 就医陪护 */ = {
+			isa = PBXGroup;
+			children = (
+				5D30B77B1EB09705000FD215 /* jiuYiCollectionViewController.h */,
+				5D30B77C1EB09705000FD215 /* jiuYiCollectionViewController.m */,
+				5D30B77D1EB09705000FD215 /* jiuYiViewController.h */,
+				5D30B77E1EB09705000FD215 /* jiuYiViewController.m */,
+			);
+			path = "就医陪护";
 			sourceTree = "<group>";
 		};
 		5D4540D01E06596A003FDE1A /* 地图 */ = {
@@ -1862,6 +1946,7 @@
 				5D2771D31E0CB6F200C3376A /* healthViewController.h */,
 				5D2771D41E0CB6F200C3376A /* healthViewController.m */,
 				5D2771D51E0CB6F200C3376A /* healthViewController.xib */,
+				5D30B77A1EB096E6000FD215 /* 就医陪护 */,
 			);
 			path = "健康";
 			sourceTree = "<group>";
@@ -1869,6 +1954,8 @@
 		E4AE1BC51DE3E217002795BD /* 生活 */ = {
 			isa = PBXGroup;
 			children = (
+				5D30B7511EB0906A000FD215 /* 小秘书 */,
+				5D30B7381EB08940000FD215 /* 社区 */,
 				5D2771E11E0CF5C400C3376A /* 维修 */,
 				E4127A751DF543B900C20658 /* 保洁 */,
 				E4127A771DF5440100C20658 /* 点餐 */,
@@ -2057,6 +2144,7 @@
 				E4127AA71DF5440100C20658 /* ShopTableViewCell.xib in Resources */,
 				5D2771D71E0CB6F200C3376A /* healthViewController.xib in Resources */,
 				5D4540E01E06596E003FDE1A /* mapapi.bundle in Resources */,
+				5D30B7781EB0923A000FD215 /* TianjiaAlertViewController.xib in Resources */,
 				E463B6A61E1D15F80086AC58 /* AddNewAddressCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2133,15 +2221,20 @@
 				E463220F1E6CFD3400EB2D99 /* ShiMingRenZhengVC.m in Sources */,
 				E445F3201DF7FE7D00377343 /* SearchModel.m in Sources */,
 				E44CF4591DDD84AC00783CDB /* speach.m in Sources */,
+				5D30B7741EB0923A000FD215 /* Data.m in Sources */,
 				E4233B7B1DDAA1990023D3DC /* ViewController.m in Sources */,
 				E458F9181EA73AF3000D8B2F /* shouQuanModel.m in Sources */,
+				5D30B7501EB08C1A000FD215 /* SCWebViewController.m in Sources */,
 				E458F9061EA6FC7D000D8B2F /* settingTVC.m in Sources */,
 				E44ACBE21E0650D000426D8D /* searchTableViewCell.m in Sources */,
+				5D30B7771EB0923A000FD215 /* TianjiaAlertViewController.m in Sources */,
+				5D30B7471EB08B71000FD215 /* SCCommunityViewController.m in Sources */,
 				E40A75061DDB295100A30B81 /* AdNetWorking.m in Sources */,
 				E438318F1E9F152E0009BB09 /* JianKanggGuangBoVC.m in Sources */,
 				E43FDBF01EA4BADF00A55A81 /* MapVC.m in Sources */,
 				E4127AB81DF548D400C20658 /* shangChengVC.m in Sources */,
 				E4501B0C1DE71C840015A79E /* oldNetworking.m in Sources */,
+				5D30B7731EB0923A000FD215 /* Clock.m in Sources */,
 				E4BF092D1DE2E2AB0075A746 /* LoginnViewController.m in Sources */,
 				E4FA1F2E1DFFD58F000563CD /* goodsDetailViewController.m in Sources */,
 				E44ACBDA1E0650D000426D8D /* zuDaoViewModel.m in Sources */,
@@ -2162,6 +2255,7 @@
 				E4501B051DE6DA760015A79E /* scoreShopViewModel.m in Sources */,
 				E412B5181DEC04CF006EEFCF /* oldNetManager.m in Sources */,
 				E44ACBD91E0650D000426D8D /* zuDaoModel.m in Sources */,
+				5D30B7751EB0923A000FD215 /* MiShuViewController.m in Sources */,
 				E431C29D1E00EB4F00F44EDC /* FenLeiViewController.m in Sources */,
 				E445F3161DF7A50E00377343 /* BCHTool.m in Sources */,
 				E4FAFCD71E03C9C900C2E945 /* goodsWithGuigeCell.m in Sources */,
@@ -2178,20 +2272,24 @@
 				E4233B811DDAA1990023D3DC /* BaoChunHui.xcdatamodeld in Sources */,
 				E4548A991E057D3A00878E23 /* DeliveryAddressCell.m in Sources */,
 				E44ACBDD1E0650D000426D8D /* dingDanViewController.m in Sources */,
+				5D30B7761EB0923A000FD215 /* SCTanView.m in Sources */,
 				E4160C941DF8E3B100F0E7D4 /* ShopVCModel.m in Sources */,
 				E4501B081DE6E40C0015A79E /* scoreShopModel.m in Sources */,
 				E40A750A1DDB2A6F00A30B81 /* AdModel.m in Sources */,
 				E44ACBE41E0650D000426D8D /* sendMealCollectionViewController.m in Sources */,
 				E4127AA81DF5440100C20658 /* StoreCell.m in Sources */,
 				E4127A9D1DF5440100C20658 /* bannerAdView.m in Sources */,
+				5D30B77F1EB09705000FD215 /* jiuYiCollectionViewController.m in Sources */,
 				E4C2B30F1DFBFBFF00DB61A1 /* PlusMinusCell.m in Sources */,
 				E4423DBA1E250DBF00F7A2DA /* AVViewController.m in Sources */,
 				E4127A9E1DF5440100C20658 /* fenLeiCell.m in Sources */,
 				E44ACBD41E0650D000426D8D /* HWDatePicker.m in Sources */,
 				5D2771E41E0CF87200C3376A /* SCWeixiuViewController.m in Sources */,
 				E4501B021DE6C9590015A79E /* scoreShopHeaderView.m in Sources */,
+				5D30B74D1EB08BE3000FD215 /* SCInfoCollectController.m in Sources */,
 				E44ACBCD1E0650D000426D8D /* peiHuCollectionViewController.m in Sources */,
 				5D2CF1261E0A22EC003A6F01 /* zhaoHuNetManager.m in Sources */,
+				5D30B74A1EB08BA9000FD215 /* SCCommunityViewCell.m in Sources */,
 				E4423DAE1E24818C00F7A2DA /* WenYiShiPinModel.m in Sources */,
 				E44ACBD71E0650D000426D8D /* zuDaoCollectionViewCell.m in Sources */,
 				E44ACBE31E0650D000426D8D /* sendMeadlTableViewController.m in Sources */,
@@ -2199,6 +2297,7 @@
 				E44ACBE51E0650D000426D8D /* TRFactory.m in Sources */,
 				E43FDBF31EA4BE8800A55A81 /* MineTableVC.m in Sources */,
 				E449324D1DFA94F70082DEC7 /* SelectModel.m in Sources */,
+				5D30B7791EB0923A000FD215 /* XiaoMiShuTableViewCell.m in Sources */,
 				E4127A9B1DF5440100C20658 /* foodClassModel.m in Sources */,
 				E463B6A01E1D11030086AC58 /* Add_EditShouHuoDiZhiVCViewController.m in Sources */,
 				E4AE1C2C1DE455E2002795BD /* FamilyTabBarViewController.m in Sources */,
@@ -2228,6 +2327,7 @@
 				E44BDB4B1DFE97CA0027DEED /* ChooseGuiGeView.m in Sources */,
 				E43831951E9F35F10009BB09 /* jianKangJiGouCell.m in Sources */,
 				5D2D0F7F1E0D1979003749F0 /* SCQiangDanView.m in Sources */,
+				5D30B7801EB09705000FD215 /* jiuYiViewController.m in Sources */,
 				E4D3E6AE1DF555FA006F0560 /* shangChengViewModel.m in Sources */,
 				E4233B751DDAA1990023D3DC /* main.m in Sources */,
 				E4127AA91DF5440100C20658 /* buyFoodTableViewController.m in Sources */,
