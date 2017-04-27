@@ -9,8 +9,10 @@
 #import "LiveViewController.h"
 #import "buyFoodTableViewController.h"
 #import "shangChengVC.h"
-
-
+#import "SCBaoJieController.h"
+#import "SCWeixiuViewController.h"
+#import "SCCommunityViewController.h"
+#import "MiShuViewController.h"
 
 
 
@@ -31,19 +33,24 @@
         case 100:
         {
             buyFoodTableViewController *vc = [[buyFoodTableViewController alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
             [self.navigationController pushViewController:vc animated:YES];
         }
             break;
             
         case 101:
         {
-            [self alertForWait];
-            //
+            UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+            SCBaoJieController *vc = [[SCBaoJieController alloc] initWithCollectionViewLayout:layout];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 102:
         {
-            [self alertForWait];
+            SCWeixiuViewController *vc = [[SCWeixiuViewController alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 103:
@@ -55,22 +62,27 @@
             break;
         case 104:
         {
-            [self alertForWait];
+            [self alertView];
         }
             break;
         case 105:
         {
-            [self alertForWait];
+            [self alertView];
         }
             break;
         case 106:
         {
-            [self alertForWait];
+            MiShuViewController *vc = [[MiShuViewController alloc] init];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 107:
         {
-            [self alertForWait];
+            UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+            SCCommunityViewController *vc = [[SCCommunityViewController alloc] initWithCollectionViewLayout:layout];
+            vc.hidesBottomBarWhenPushed = YES;
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 108:
@@ -98,6 +110,16 @@
     
 }
 
+- (void)alertView {
+    UIAlertController *alert = [UIAlertController alertControllerWithTitle:@"拨打电话" message:nil preferredStyle:UIAlertControllerStyleActionSheet];
+    [alert addAction:[UIAlertAction actionWithTitle:@"10008" style:UIAlertActionStyleDefault handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"点击了拨打电话");
+    }]];
+    [alert addAction:[UIAlertAction actionWithTitle:@"取消" style:UIAlertActionStyleDestructive handler:^(UIAlertAction * _Nonnull action) {
+        NSLog(@"点击了取消");
+    }]];
+    [self presentViewController:alert animated:YES completion:nil];
+}
 
 
 
