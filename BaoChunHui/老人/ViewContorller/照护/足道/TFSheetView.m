@@ -141,7 +141,7 @@
             make.top.equalTo(self.lineView1.mas_bottom).equalTo(12);
             make.size.equalTo(30);
         }];
-        _imageView1.backgroundColor = [UIColor cyanColor];
+        _imageView1.image = [UIImage imageNamed:@"icon_wechat"];
     }
     return _imageView1;
 }
@@ -182,7 +182,7 @@
             make.top.equalTo(self.lineView2.mas_bottom).equalTo(12);
             make.size.equalTo(30);
         }];
-        _imageView2.backgroundColor = [UIColor cyanColor];
+        _imageView2.image = [UIImage imageNamed:@"icon_zhifubao"];
     }
     return _imageView2;
 }

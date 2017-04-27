@@ -158,7 +158,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [TRFactory addBackItemForVC:self];
-    self.navigationItem.title = @"送餐地址";
+    self.navigationItem.title = @"地址";
     self.view.backgroundColor = kRGBA(245, 245, 245, 1);
     [self batteryView];
     [self topView];

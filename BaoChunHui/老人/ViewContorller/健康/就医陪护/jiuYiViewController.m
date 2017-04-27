@@ -1,32 +1,21 @@
 //
-//  zuDaoDingDanViewController.m
-//  zhaoHuDemo
+//  jiuYiViewController.m
+//  BaoChunHui
 //
-//  Created by BCH on 2016/12/16.
-//  Copyright © 2016年 BCH. All rights reserved.
+//  Created by BCH on 2017/4/13.
+//  Copyright © 2017年 xudogn. All rights reserved.
 //
 
-#import "zuDaoDingDanViewController.h"
+#import "jiuYiViewController.h"
 #import "TFSheetView.h"
 
-@interface zuDaoDingDanViewController ()<TFSheetViewDelegate>
+@interface jiuYiViewController ()<TFSheetViewDelegate>
 @property (nonatomic) UIButton *jiageButton;
 @property (nonatomic) UIButton *payButton;
 @property (nonatomic) TFSheetView *tfSheetView;
 @end
 
-@implementation zuDaoDingDanViewController
-- (void)payOfPageBtnView:(TFSheetView *)btnView showBtnView:(UIButton *)btn {
-    btn.backgroundColor = kRGBA(255, 216, 95, 1);
-}
-//- (UIView *)daoHangView {
-//    if (!_daoHangView) {
-//        _daoHangView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, 66)];
-//        [self.view addSubview:_daoHangView];
-//        _daoHangView.backgroundColor = kRGBA(255, 216, 95, 1);
-//    }
-//    return _daoHangView;
-//}
+@implementation jiuYiViewController
 - (UIView *)myView {
     if (!_myView) {
         _myView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, 288)];
@@ -45,7 +34,7 @@
             make.width.equalTo(150);
             make.height.equalTo(25);
         }];
-        _nameLb.text = @"盲僧";
+        _nameLb.text = @"张三";
         _nameLb.font = [UIFont systemFontOfSize:25];
         _nameLb.textColor = kRGBA(26, 26, 26, 1);
     }
@@ -108,7 +97,7 @@
             make.right.equalTo(-20);
             make.height.equalTo(25);
         }];
-        _sendLb.text = @"服务类型:";
+        _sendLb.text = @"护理类型:";
         _sendLb.font = [UIFont systemFontOfSize:25];
         _sendLb.textColor = kRGBA(26, 26, 26, 1);
     }
@@ -125,7 +114,7 @@
             make.right.equalTo(-50);
             make.height.equalTo(25);
         }];
-        _timeLb.text = @"开始护理时间：";
+        _timeLb.text = @"服务时间:";
         _timeLb.font = [UIFont systemFontOfSize:25];
         _timeLb.textColor = kRGBA(26, 26, 26, 1);
     }
@@ -180,7 +169,7 @@
             sumLb.textAlignment = NSTextAlignmentRight;
         }];
         
-        _allPrice.text = @"998.00";
+        _allPrice.text = @"120.00";
         _allPrice.textAlignment = NSTextAlignmentLeft;
         _allPrice.textColor = kRGBA(252, 110, 39, 1);
         _allPrice.font = [UIFont systemFontOfSize:28];
@@ -197,7 +186,7 @@
             make.width.equalTo(self.payButton.mas_width);
         }];
         [_jiageButton setTitleColor:kRGBA(252, 110, 39, 1) forState:UIControlStateNormal];
-        [_jiageButton setTitle:@"￥998.00" forState:UIControlStateNormal];
+        [_jiageButton setTitle:@"￥120.00" forState:UIControlStateNormal];
         _jiageButton.titleLabel.font = [UIFont systemFontOfSize:25];
         _jiageButton.titleLabel.textAlignment = NSTextAlignmentCenter;
         _jiageButton.backgroundColor = [UIColor whiteColor];
@@ -216,9 +205,8 @@
         [_payButton setTitle:@"立即支付" forState:UIControlStateNormal];
         _payButton.titleLabel.font = [UIFont systemFontOfSize:30];
         _payButton.titleLabel.textAlignment = NSTextAlignmentCenter;
-        _payButton.backgroundColor = kRGBA(255, 216, 95, 1);
-        _payButton.titleLabel.textColor = [UIColor whiteColor];
-        
+        _payButton.backgroundColor = kRGBA(34, 167, 224, 1);
+        [_payButton setTitleColor:[UIColor whiteColor] forState:UIControlStateNormal];
         
         [_payButton addTarget:self action:@selector(push) forControlEvents:UIControlEventTouchUpInside];
         
@@ -229,17 +217,18 @@
     _tfSheetView = [[TFSheetView alloc]init];
     _tfSheetView.delegate = self;
     [_tfSheetView showInView:self.view];
-    
+}
+- (void)payOfPageBtnView:(TFSheetView *)btnView showBtnView:(UIButton *)btn {
+    btn.backgroundColor = kRGBA(34, 167, 224, 1);
 }
 - (void)viewWillAppear:(BOOL)animated {
-    self.navigationController.navigationBar.barTintColor = kRGBA(255, 216, 95, 1);
+    self.navigationController.navigationBar.barTintColor = kRGBA(34, 167, 224, 1);
 }
 - (void)viewWillDisappear:(BOOL)animated {
     self.navigationController.navigationBar.barTintColor = kRGBA(48, 206, 185, 1);
 }
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
     [TRFactory addBackItemForVC:self];
     self.navigationItem.title = @"确认订单";
     self.view.backgroundColor = kRGBA(245, 245, 245, 1);
@@ -256,5 +245,20 @@
     [self jiageButton];
     [self payButton];
 }
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+/*
+#pragma mark - Navigation
+
+// In a storyboard-based application, you will often want to do a little preparation before navigation
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
+    // Get the new view controller using [segue destinationViewController].
+    // Pass the selected object to the new view controller.
+}
+*/
 
 @end
