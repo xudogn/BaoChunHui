@@ -172,7 +172,10 @@
             layout.itemSize = CGSizeMake((kScreenW - 3)/2.0, 100);
             FuWuJIGOUVC *vc = [[FuWuJIGOUVC alloc] initWithCollectionViewLayout:layout];
             UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
-            [self presentViewController:navi animated:YES completion:nil];
+            AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            delegate.window.rootViewController = navi;
+            NSNumber *obviousModule = [NSNumber numberWithInteger:PartOf5];
+            [[NSUserDefaults standardUserDefaults] setObject:obviousModule forKey:@"obviousModule"];
         }
         {
             
