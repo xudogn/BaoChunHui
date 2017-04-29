@@ -1,30 +1,26 @@
 //
-//  yanglaoTVC.m
+//  lawerTVC.m
 //  BaoChunHui
 //
-//  Created by xudogn on 17/4/28.
+//  Created by xudogn on 17/4/29.
 //  Copyright © 2017年 xudogn. All rights reserved.
 //
 
-#import "yanglaoTVC.h"
-#import "jigouxinxiTVC.h"
-#import "VideoTVC.h"
+#import "lawerTVC.h"
+#import "lawerRoomTVC.h"
 #import "ShiMingRenZhengVC.h"
 
-@interface yanglaoTVC ()
-@property (nonatomic, strong) NSArray *arr;
+@interface lawerTVC ()
+
 @end
 
-@implementation yanglaoTVC
+@implementation lawerTVC
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    
-    self.arr = @[@"注册", @"机构信息", @"促销广告", @"曝光台", ];
     [self.tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:@"cell"];
     self.tableView.tableFooterView = [UIView new];
-    self.tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
 }
 
 - (void)didReceiveMemoryWarning {
@@ -39,49 +35,41 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-
-    return 4;
+    return 2;
 }
 
 
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"cell" forIndexPath:indexPath];
     
-    cell.textLabel.text = self.arr[indexPath.row];
+    // Configure the cell...
+    if (indexPath.row == 0) {
+        cell.textLabel.text = @"注册";
+    }else{
+        cell.textLabel.text = @"律师事务所";
+    }
     
     return cell;
 }
+
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
-    switch (indexPath.row) {
-        case 0:
-        {
-            ShiMingRenZhengVC *vc = [[ShiMingRenZhengVC alloc] initWithNibName:NSStringFromClass([ShiMingRenZhengVC class]) bundle:nil];
-            [self.navigationController pushViewController:vc animated:YES];
-        }
-            break;
-        case 01:
-        {
-            jigouxinxiTVC *vc = [[jigouxinxiTVC alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
-        }
-            break;
-        case 02:
-        {
-            VideoTVC *vc = [[VideoTVC alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
-        }
-            break;
-        case 03:
-        {
-            VideoTVC *vc = [[VideoTVC alloc] init];
-            [self.navigationController pushViewController:vc animated:YES];
-        }
-            break;
-            
-        default:
-            break;
+    if (indexPath.row == 0) {
+        ShiMingRenZhengVC *vc = [[ShiMingRenZhengVC alloc] initWithNibName:NSStringFromClass([ShiMingRenZhengVC class]) bundle:nil];
+        [self.navigationController pushViewController:vc animated:YES];
+    }else{
+        lawerRoomTVC *vc = [[lawerRoomTVC alloc] init];
+        [self.navigationController pushViewController:vc animated:YES];
     }
 }
+/*
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath {
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:<#@"reuseIdentifier"#> forIndexPath:indexPath];
+    
+    // Configure the cell...
+    
+    return cell;
+}
+*/
 
 /*
 // Override to support conditional editing of the table view.

@@ -13,7 +13,12 @@
 #import "gonvermentTVC.h"
 #import "sheQuZhuLaoVCT.h"
 #import "yanglaoTVC.h"
-
+#import "tuolaoTVC.h"
+#import "jiazhengTVC.h"
+#import "travelTVC.h"
+#import "lawerTVC.h"
+#import "OldProductMakerVC.h"
+#import "volunteerOrgTVC.h"
 
 @interface FuWuJIGOUVC ()
 
@@ -104,32 +109,39 @@ static NSString * const reuseIdentifier = @"Cell";
             break;
         case 3:
         {
-            
+            tuolaoTVC *vc = [[tuolaoTVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 4:
         {
-            
+            jiazhengTVC *vc = [[jiazhengTVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 5:
         {
-            
+            travelTVC *vc = [[travelTVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 6:
         {
-            
+            lawerTVC *vc = [[lawerTVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 7:
         {
-            
+            OldProductMakerVC *vc = [[OldProductMakerVC alloc] initWithNibName:@"OldProductMakerVC" bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 8:
         {
             
+            volunteerOrgTVC *vc = [[volunteerOrgTVC alloc] init];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
             

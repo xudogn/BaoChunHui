@@ -9,7 +9,7 @@
 #import "gonvermentTVC.h"
 #import "SCCommunityViewController.h"
 #import "adviceVC.h"
-
+#import "ShiMingRenZhengVC.h"
 
 @interface gonvermentTVC ()
 
@@ -54,7 +54,8 @@
     switch (indexPath.row) {
         case 0: // 注册
         {
-            
+            ShiMingRenZhengVC *vc = [[ShiMingRenZhengVC alloc] initWithNibName:NSStringFromClass([ShiMingRenZhengVC class]) bundle:nil];
+            [self.navigationController pushViewController:vc animated:YES];
         }
             break;
         case 01:
