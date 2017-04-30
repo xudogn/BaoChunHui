@@ -14,7 +14,7 @@
 #import "NurseTabBarViewController.h"
 #import "FamilyTabBarViewController.h"
 #import "HelpButton.h"
-
+#import "FuWuJIGOUVC.h"
 
 
 
@@ -265,7 +265,18 @@
                 
                 break;
             case PartOf5:
-                
+            {
+                UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+                layout.minimumLineSpacing = 1;
+                layout.minimumInteritemSpacing = 1;
+                layout.sectionInset = UIEdgeInsetsMake(1, 1, 1, 1);
+                layout.itemSize = CGSizeMake((kScreenW - 3)/2.0, 100);
+                FuWuJIGOUVC *vc = [[FuWuJIGOUVC alloc] initWithCollectionViewLayout:layout];
+                UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:vc];
+                AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+                delegate.window.rootViewController = navi;
+                _window.rootViewController = navi;
+            }
                 break;
             default:{
                 

@@ -11,6 +11,7 @@
 #import "WenYiShiPinVC.h"
 #import "JianKangShiPinVC.h"
 #import "JianKanggGuangBoVC.h"
+#import "jiuYiCollectionViewController.h"
 
 @interface healthViewController ()
 
@@ -25,6 +26,10 @@
 
 
 - (IBAction)JiuYiPeiHu:(id)sender {
+    UICollectionViewFlowLayout *layout = [UICollectionViewFlowLayout new];
+    jiuYiCollectionViewController *vc = [[jiuYiCollectionViewController alloc] initWithCollectionViewLayout:layout];
+    vc.hidesBottomBarWhenPushed = YES;
+    [self.navigationController pushViewController:vc animated:YES];
 }
 
 - (IBAction)ChuiHuiReXian:(id)sender {

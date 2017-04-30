@@ -180,7 +180,7 @@
             sumLb.textAlignment = NSTextAlignmentRight;
         }];
         
-        _allPrice.text = @"1200.00";
+        _allPrice.text = @"998.00";
         _allPrice.textAlignment = NSTextAlignmentLeft;
         _allPrice.textColor = kRGBA(252, 110, 39, 1);
         _allPrice.font = [UIFont systemFontOfSize:28];
@@ -197,7 +197,7 @@
             make.width.equalTo(self.payButton.mas_width);
         }];
         [_jiageButton setTitleColor:kRGBA(252, 110, 39, 1) forState:UIControlStateNormal];
-        [_jiageButton setTitle:@"￥1200.00" forState:UIControlStateNormal];
+        [_jiageButton setTitle:@"￥998.00" forState:UIControlStateNormal];
         _jiageButton.titleLabel.font = [UIFont systemFontOfSize:25];
         _jiageButton.titleLabel.textAlignment = NSTextAlignmentCenter;
         _jiageButton.backgroundColor = [UIColor whiteColor];

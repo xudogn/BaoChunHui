@@ -161,7 +161,7 @@
                   moduleName = "BaoChunHui"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xudogn/GitHub/BaoChunHui/BaoChunHui/%E8%80%81%E4%BA%BA/ViewContorller/%E7%94%9F%E6%B4%BB/%E5%95%86%E5%9F%8E/%E6%B7%BB%E5%8A%A0%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80VC/Add_EditShouHuoDiZhiVCViewController.m"
-                  timestampString = "514867824.596789"
+                  timestampString = "515213302.810768"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "361"
@@ -176,7 +176,7 @@
                   moduleName = "BaoChunHui"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/xudogn/GitHub/BaoChunHui/BaoChunHui/%E8%80%81%E4%BA%BA/ViewContorller/%E7%94%9F%E6%B4%BB/%E5%95%86%E5%9F%8E/%E6%B7%BB%E5%8A%A0%E6%94%B6%E8%B4%A7%E5%9C%B0%E5%9D%80VC/Add_EditShouHuoDiZhiVCViewController.m"
-                  timestampString = "514867824.600377"
+                  timestampString = "515213302.813017"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "362"
@@ -248,6 +248,16 @@
             endingLineNumber = "137"
             landmarkName = "+POSTToken:parameters:completionHandler:"
             landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.ExceptionBreakpoint">
+         <BreakpointContent
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            scope = "0"
+            stopOnStyle = "0">
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>

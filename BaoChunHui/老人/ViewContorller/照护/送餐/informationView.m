@@ -39,7 +39,7 @@
         [self addSubview:_timeImage];
         [_timeImage mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(12);
-           // make.centerY.equalTo(self.dateTextField);
+            // make.centerY.equalTo(self.dateTextField);
             make.top.equalTo(13);
             make.size.equalTo(24);
         }];
@@ -65,7 +65,8 @@
         _addressImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"con_location"]];
         [self addSubview:_addressImage];
         [_addressImage mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_lineView1.mas_top).equalTo(13);
+            //make.top.equalTo(_lineView1.mas_top).equalTo(13);
+            make.centerY.equalTo(self.addressLb);
             make.left.equalTo(12);
             make.size.equalTo(24);
         }];
@@ -78,58 +79,59 @@
         [self addSubview:_addressLb];
         [_addressLb mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(_addressImage.mas_right).equalTo(10);
-            make.width.equalTo(200);
-            make.height.equalTo(30);
-            make.centerY.equalTo(self.addressImage);
+            make.right.equalTo(-30);
+            make.height.equalTo(65);
+            make.top.equalTo(_lineView1.mas_bottom).equalTo(10);
         }];
-        _addressLb.text = @"地址";
+        _addressLb.text = @"北京海淀上庄翠湖路8号";
         _addressLb.textColor = kRGBA(204, 204, 204, 1);
         _addressLb.font = [UIFont systemFontOfSize:25];
+        _addressLb.numberOfLines = 0;
     }
     return _addressLb;
 }
-- (UIView *)lineView2 {
-    if (!_lineView2) {
-        _lineView2 = [[UIView alloc] init];
-        [self addSubview:_lineView2];
-        [_lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(100);
-            make.left.equalTo(12);
-            make.right.equalTo(0);
-            make.height.equalTo(1);
-        }];
-        _lineView2.backgroundColor = kRGBA(224, 224, 224, 1);
-    }
-    return _lineView2;
-}
-- (UIImageView *)icon {
-    if (!_icon) {
-        _icon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"con_mine"]];
-        [self addSubview:_icon];
-        [_icon mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.top.equalTo(_lineView2.mas_bottom).equalTo(13);
-            make.left.equalTo(12);
-            make.size.equalTo(24);
-        }];
-    }
-    return _icon;
-}
-- (UILabel *)nameLb {
-    if (!_nameLb) {
-        _nameLb = [UILabel new];
-        [self addSubview:_nameLb];
-        [_nameLb mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(_icon.mas_right).equalTo(10);
-            make.width.equalTo(200);
-            make.height.equalTo(30);
-            make.centerY.equalTo(_icon);
-        }];
-        _nameLb.text = @"盖伦";
-        _nameLb.textColor = kRGBA(26, 26, 26, 1);
-        _nameLb.font = [UIFont systemFontOfSize:25];
-    }
-    return _nameLb;
-}
+//- (UIView *)lineView2 {
+//    if (!_lineView2) {
+//        _lineView2 = [[UIView alloc] init];
+//        [self addSubview:_lineView2];
+//        [_lineView2 mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.top.equalTo(100);
+//            make.left.equalTo(12);
+//            make.right.equalTo(0);
+//            make.height.equalTo(1);
+//        }];
+//        _lineView2.backgroundColor = kRGBA(224, 224, 224, 1);
+//    }
+//    return _lineView2;
+//}
+//- (UIImageView *)icon {
+//    if (!_icon) {
+//        _icon = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"con_mine"]];
+//        [self addSubview:_icon];
+//        [_icon mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.top.equalTo(_lineView2.mas_bottom).equalTo(13);
+//            make.left.equalTo(12);
+//            make.size.equalTo(24);
+//        }];
+//    }
+//    return _icon;
+//}
+//- (UILabel *)nameLb {
+//    if (!_nameLb) {
+//        _nameLb = [UILabel new];
+//        [self addSubview:_nameLb];
+//        [_nameLb mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.left.equalTo(_icon.mas_right).equalTo(10);
+//            make.width.equalTo(200);
+//            make.height.equalTo(30);
+//            make.centerY.equalTo(_icon);
+//        }];
+//        _nameLb.text = @"盖伦";
+//        _nameLb.textColor = kRGBA(26, 26, 26, 1);
+//        _nameLb.font = [UIFont systemFontOfSize:25];
+//    }
+//    return _nameLb;
+//}
 - (UIView *)lineView3 {
     if (!_lineView3) {
         _lineView3 = [[UIView alloc] init];
@@ -144,48 +146,48 @@
     }
     return _lineView3;
 }
-- (UIImageView *)phoneImage {
-    if (!_phoneImage) {
-        _phoneImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"con_phone"]];
-        [self addSubview:_phoneImage];
-        [_phoneImage mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(12);
-            make.top.equalTo(_lineView3.mas_bottom).equalTo(13);
-            make.size.equalTo(24);
-        }];
-    }
-    return _phoneImage;
-}
-- (UILabel *)phoneLb {
-    if (!_phoneLb) {
-        _phoneLb = [UILabel new];
-        [self addSubview:_phoneLb];
-        [_phoneLb mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.left.equalTo(_phoneImage.mas_right).equalTo(10);
-            make.centerY.equalTo(_phoneImage);
-            make.width.equalTo(200);
-            make.height.equalTo(30);
-        }];
-        _phoneLb.font = [UIFont systemFontOfSize:25];
-        _phoneLb.textColor = kRGBA(26, 26, 26, 1);
-        _phoneLb.text = @"15201152903";
-    }
-    return _phoneLb;
-}
-- (UIButton *)btn1 {
-    if (!_btn1) {
-        _btn1 = [UIButton new];
-        [self addSubview:_btn1];
-        [_btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
-            make.right.equalTo(-12);
-            make.centerY.equalTo(_timeImage);
-            make.height.equalTo(25);
-            make.width.equalTo(12);
-        }];
-        [_btn1 setImage:[UIImage imageNamed:@"con_more"] forState:UIControlStateNormal];
-    }
-    return _btn1;
-}
+//- (UIImageView *)phoneImage {
+//    if (!_phoneImage) {
+//        _phoneImage = [[UIImageView alloc] initWithImage:[UIImage imageNamed:@"con_phone"]];
+//        [self addSubview:_phoneImage];
+//        [_phoneImage mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.left.equalTo(12);
+//            make.top.equalTo(_lineView3.mas_bottom).equalTo(13);
+//            make.size.equalTo(24);
+//        }];
+//    }
+//    return _phoneImage;
+//}
+//- (UILabel *)phoneLb {
+//    if (!_phoneLb) {
+//        _phoneLb = [UILabel new];
+//        [self addSubview:_phoneLb];
+//        [_phoneLb mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.left.equalTo(_phoneImage.mas_right).equalTo(10);
+//            make.centerY.equalTo(_phoneImage);
+//            make.width.equalTo(200);
+//            make.height.equalTo(30);
+//        }];
+//        _phoneLb.font = [UIFont systemFontOfSize:25];
+//        _phoneLb.textColor = kRGBA(26, 26, 26, 1);
+//        _phoneLb.text = @"15201152903";
+//    }
+//    return _phoneLb;
+//}
+//- (UIButton *)btn1 {
+//    if (!_btn1) {
+//        _btn1 = [UIButton new];
+//        [self addSubview:_btn1];
+//        [_btn1 mas_makeConstraints:^(MASConstraintMaker *make) {
+//            make.right.equalTo(-12);
+//            make.centerY.equalTo(_timeImage);
+//            make.height.equalTo(25);
+//            make.width.equalTo(12);
+//        }];
+//        [_btn1 setImage:[UIImage imageNamed:@"con_more"] forState:UIControlStateNormal];
+//    }
+//    return _btn1;
+//}
 - (UIButton *)btn2 {
     if (!_btn2) {
         _btn2 = [UIButton new];

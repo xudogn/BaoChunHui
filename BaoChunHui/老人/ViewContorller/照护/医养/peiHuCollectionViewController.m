@@ -78,7 +78,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [TRFactory addBackItemForVC:self];
-    self.navigationItem.title = @"就医陪护";
+    self.navigationItem.title = @"医养结合";
     self.collectionView.backgroundColor = [UIColor whiteColor];
     [self.collectionView registerClass:[zuDaoCollectionViewCell class] forCellWithReuseIdentifier:@"otherCell"];
     [self grayView1];
