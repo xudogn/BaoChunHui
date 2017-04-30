@@ -1,11 +1,11 @@
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11542" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="11762" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11524"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11757"/>
         <capability name="Constraints with non-1.0 multipliers" minToolsVersion="5.1"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -22,8 +22,17 @@
             <subviews>
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hk3-Nm-JnW">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jianKang" translatesAutoresizingMaskIntoConstraints="NO" id="PDD-1c-0Vx">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="187"/>
+                        </imageView>
+                    </subviews>
                     <color key="backgroundColor" red="0.18823529410000001" green="0.80784313730000001" blue="0.72549019609999998" alpha="1" colorSpace="calibratedRGB"/>
                     <constraints>
+                        <constraint firstItem="PDD-1c-0Vx" firstAttribute="leading" secondItem="Hk3-Nm-JnW" secondAttribute="leading" id="0Cn-gV-7ss"/>
+                        <constraint firstAttribute="trailing" secondItem="PDD-1c-0Vx" secondAttribute="trailing" id="7bv-vv-1eG"/>
+                        <constraint firstItem="PDD-1c-0Vx" firstAttribute="top" secondItem="Hk3-Nm-JnW" secondAttribute="top" id="EAa-0z-JxH"/>
+                        <constraint firstAttribute="bottom" secondItem="PDD-1c-0Vx" secondAttribute="bottom" id="pga-QF-htB"/>
                         <constraint firstAttribute="height" constant="187" id="yXc-lg-zbh"/>
                     </constraints>
                 </view>
@@ -97,14 +106,14 @@
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthy_wenyi" translatesAutoresizingMaskIntoConstraints="NO" id="vor-Cn-jTk">
-                    <rect key="frame" x="132" y="335.5" width="44" height="44"/>
+                    <rect key="frame" x="132" y="336" width="44" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="44" id="koT-bj-10y"/>
                         <constraint firstAttribute="height" constant="44" id="pjy-LU-RDz"/>
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthy_video" translatesAutoresizingMaskIntoConstraints="NO" id="2lS-RH-RSX">
-                    <rect key="frame" x="319" y="335.5" width="44" height="44"/>
+                    <rect key="frame" x="319" y="336" width="44" height="44"/>
                     <constraints>
                         <constraint firstAttribute="width" constant="44" id="2pN-IT-Em8"/>
                         <constraint firstAttribute="height" constant="44" id="TbJ-Zd-hMB"/>
@@ -162,7 +171,7 @@
                 <constraint firstItem="KhI-PY-jP2" firstAttribute="centerY" secondItem="Q6h-6i-Svb" secondAttribute="centerY" id="rDE-tT-rNO"/>
                 <constraint firstItem="2lS-RH-RSX" firstAttribute="centerY" secondItem="w7N-x4-WfS" secondAttribute="centerY" id="s21-2s-XC5"/>
             </constraints>
-            <point key="canvasLocation" x="-306" y="-350"/>
+            <point key="canvasLocation" x="-305" y="-448"/>
         </view>
     </objects>
     <resources>
@@ -171,5 +180,6 @@
         <image name="healthy_radio" width="40" height="40"/>
         <image name="healthy_video" width="40" height="40"/>
         <image name="healthy_wenyi" width="40" height="40"/>
+        <image name="jianKang" width="496" height="259"/>
     </resources>
 </document>

@@ -104,8 +104,13 @@
     if (!_icShowView) {
         _icShowView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, kScreenW, 112)];
         [self.view addSubview:_icShowView];
-        _icShowView.backgroundColor = kRGBA(255, 206, 87, 1);
-        
+        _icShowView.backgroundColor = [UIColor redColor];
+        UIImageView *view = [[UIImageView alloc] init];
+        view.image = [UIImage imageNamed:@"weiXui"];
+        [_icShowView addSubview:view];
+        [view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(0);
+        }];
     }
     return _icShowView;
 }

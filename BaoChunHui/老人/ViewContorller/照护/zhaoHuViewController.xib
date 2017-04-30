@@ -60,7 +60,7 @@
                         <action selector="foot:" destination="-1" eventType="touchUpInside" id="aiE-Dd-fV9"/>
                     </connections>
                 </button>
-                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8a-As-z5U">
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s8a-As-z5U">
                     <rect key="frame" x="0.0" y="305" width="187" height="105"/>
                     <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
                     <fontDescription key="fontDescription" type="system" pointSize="26"/>
@@ -97,7 +97,7 @@
                     </constraints>
                 </imageView>
                 <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="healthy_care" translatesAutoresizingMaskIntoConstraints="NO" id="0bO-i7-cTW">
-                    <rect key="frame" x="132" y="336" width="44" height="44"/>
+                    <rect key="frame" x="132" y="335.5" width="44" height="44"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="44" id="Vhc-7F-CEh"/>
                         <constraint firstAttribute="width" constant="44" id="zOj-WY-Q7s"/>

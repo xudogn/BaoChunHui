@@ -16,6 +16,7 @@
 @property (nonatomic) TFSheetView *tfSheetView;
 @property (nonatomic) SCQiangDanView *qiangDanView;
 @property (nonatomic) NSTimer *timer;
+@property (nonatomic) UILabel *timeLb1;
 @end
 
 @implementation weiXiuDingDanController
@@ -98,10 +99,10 @@
         [_sendLb mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(12);
             make.top.equalTo(_lineView1.mas_bottom).equalTo(20);
-            make.right.equalTo(-20);
+            make.right.mas_greaterThanOrEqualTo(20);
             make.height.equalTo(25);
         }];
-        _sendLb.text = @"服务:";
+        _sendLb.text = @"服务: 维修";
         _sendLb.font = [UIFont systemFontOfSize:25];
         _sendLb.textColor = kRGBA(26, 26, 26, 1);
     }
@@ -115,12 +116,28 @@
         [_timeLb mas_makeConstraints:^(MASConstraintMaker *make) {
             make.left.equalTo(12);
             make.top.equalTo(_sendLb.mas_bottom).equalTo(10);
-            make.right.equalTo(-50);
+            make.width.mas_greaterThanOrEqualTo(50);
             make.height.equalTo(25);
         }];
         _timeLb.text = @"上门时间：";
         _timeLb.font = [UIFont systemFontOfSize:25];
         _timeLb.textColor = kRGBA(26, 26, 26, 1);
+    }
+    return _timeLb;
+}
+- (UILabel *)timeLb1 {
+    if (!_timeLb1) {
+        _timeLb1 = [UILabel new];
+        [_myView addSubview:_timeLb1];
+        [_timeLb1 mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.left.equalTo(_timeLb.mas_right);
+            make.top.equalTo(_timeLb.mas_top);
+            make.width.mas_greaterThanOrEqualTo(50);
+            make.height.equalTo(25);
+        }];
+        _timeLb1.text = @"2017.5.10";
+        _timeLb1.font = [UIFont systemFontOfSize:25];
+        
     }
     return _timeLb;
 }
@@ -272,6 +289,7 @@
     [self allPrice];
     [self jiageButton];
     [self payButton];
+    [self timeLb1];
 }
 
 - (void)didReceiveMemoryWarning {

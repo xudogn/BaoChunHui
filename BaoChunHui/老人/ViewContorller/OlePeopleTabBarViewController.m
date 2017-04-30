@@ -52,7 +52,7 @@
     
     UINavigationController *navi0 = [[BCHnaviViewController alloc] initWithRootViewController:self.liveVC];
     
-    navi0.navigationBar.barTintColor = [UIColor ShengHuoColor];
+    navi0.navigationBar.barTintColor = [UIColor ZhaoHuColor];
     UINavigationController *navi1 = [[BCHnaviViewController alloc] initWithRootViewController:self.careVC];
     navi1.navigationBar.barTintColor = [UIColor ZhaoHuColor];
     
@@ -60,7 +60,7 @@
     navi2.navigationBar.barTintColor = [UIColor ShengHuoColor];
     
     UINavigationController *navi3 = [[BCHnaviViewController alloc] initWithRootViewController:self.mineVC];
-    navi3.navigationBar.barTintColor = [UIColor ShengHuoColor];
+    navi3.navigationBar.barTintColor = [UIColor ZhaoHuColor];
     self.viewControllers = @[navi0, navi1, navi2, navi3];
     
 

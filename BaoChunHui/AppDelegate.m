@@ -14,7 +14,7 @@
 #import "NurseTabBarViewController.h"
 #import "FamilyTabBarViewController.h"
 #import "HelpButton.h"
-
+#import "VolunteerForOldViewController.h"
 
 
 
@@ -266,6 +266,9 @@
                 break;
             case PartOf5:
                 
+                break;
+            case PsrtOf6:
+                _window.rootViewController = [[VolunteerForOldViewController alloc]init];
                 break;
             default:{
                 

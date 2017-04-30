@@ -166,6 +166,13 @@
         [self.collectionView addSubview:_icShowView];
         _icShowView.backgroundColor = kRGBA(16, 166, 226, 1);
         
+        UIImageView *view = [[UIImageView alloc] init];
+        view.image = [UIImage imageNamed:@"baoJie"];
+        [_icShowView addSubview:view];
+        [view mas_makeConstraints:^(MASConstraintMaker *make) {
+            make.edges.equalTo(0);
+        }];
+        
         UILabel *typeLb = [[UILabel alloc] init];
         [self.collectionView addSubview:typeLb];
         [typeLb mas_makeConstraints:^(MASConstraintMaker *make) {
