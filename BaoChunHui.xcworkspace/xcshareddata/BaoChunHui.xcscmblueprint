@@ -1,0 +1,30 @@
+{
+  "DVTSourceControlWorkspaceBlueprintPrimaryRemoteRepositoryKey" : "34199E3889D3F6125324853A6CDE29A1541C5BDA",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyRepositoryLocationsKey" : {
+
+  },
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyStatesKey" : {
+    "34199E3889D3F6125324853A6CDE29A1541C5BDA" : 9223372036854775807,
+    "433894155FFC4B82AEF3B890037AD3D3F716D61B" : 9223372036854775807
+  },
+  "DVTSourceControlWorkspaceBlueprintIdentifierKey" : "627605D5-057A-48DC-8E09-0142EF9470B5",
+  "DVTSourceControlWorkspaceBlueprintWorkingCopyPathsKey" : {
+    "34199E3889D3F6125324853A6CDE29A1541C5BDA" : "BaoChunHui\/",
+    "433894155FFC4B82AEF3B890037AD3D3F716D61B" : "Desktop\/BaoChunHui111\/"
+  },
+  "DVTSourceControlWorkspaceBlueprintNameKey" : "BaoChunHui",
+  "DVTSourceControlWorkspaceBlueprintVersion" : 204,
+  "DVTSourceControlWorkspaceBlueprintRelativePathToProjectKey" : "BaoChunHui.xcworkspace",
+  "DVTSourceControlWorkspaceBlueprintRemoteRepositoriesKey" : [
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "github.com:xudogn\/BaoChunHui.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "34199E3889D3F6125324853A6CDE29A1541C5BDA"
+    },
+    {
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryURLKey" : "https:\/\/github.com\/xudogn\/BaoChunHui.git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositorySystemKey" : "com.apple.dt.Xcode.sourcecontrol.Git",
+      "DVTSourceControlWorkspaceBlueprintRemoteRepositoryIdentifierKey" : "433894155FFC4B82AEF3B890037AD3D3F716D61B"
+    }
+  ]
+}
