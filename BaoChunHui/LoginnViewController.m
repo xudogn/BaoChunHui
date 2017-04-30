@@ -12,7 +12,8 @@
 #import "FamilyTabBarViewController.h"
 #import "ViewController.h"
 #import "NurseTabBarViewController.h"
-
+#import "ZHStationViewController.h"
+#import "VolunteerForOldViewController.h"
 
 
 #import "AppDelegate.h"
@@ -146,10 +147,12 @@
         case PartOfCareStation:
             //照护站
         {
+            ZHStationViewController *vc = [[ZHStationViewController alloc] init];
+            AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            delegate.window.rootViewController = vc;
             
-            
-            NSNumber *obviousModule = [NSNumber numberWithInteger:PartOfCareStation];
-            [[NSUserDefaults standardUserDefaults] setObject:obviousModule forKey:@"obviousModule"];
+//            NSNumber *obviousModule = [NSNumber numberWithInteger:PartOfCareStation];
+//            [[NSUserDefaults standardUserDefaults] setObject:obviousModule forKey:@"obviousModule"];
         }
             break;
         case PartOfService:
@@ -181,7 +184,18 @@
             
         }
             break;
+        case PsrtOf6:
+            // 敬老志愿
+        {
+            VolunteerForOldViewController *vc = [[VolunteerForOldViewController alloc] init];
+            // [self presentViewController:vc animated:YES completion:nil];
+            AppDelegate *delegate = (AppDelegate *)[UIApplication sharedApplication].delegate;
+            delegate.window.rootViewController = vc;
+            NSNumber *obviousModule = [NSNumber numberWithInteger:PsrtOf6];
+            [[NSUserDefaults standardUserDefaults] setObject:obviousModule forKey:@"obviousModule"];
             
+        }
+            break;
         default:
             //
             break;

@@ -37,6 +37,16 @@
 		5D4540DE1E06596E003FDE1A /* BaiduMapAPI_Search.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4540D61E06596E003FDE1A /* BaiduMapAPI_Search.framework */; };
 		5D4540DF1E06596E003FDE1A /* BaiduMapAPI_Utils.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5D4540D71E06596E003FDE1A /* BaiduMapAPI_Utils.framework */; };
 		5D4540E01E06596E003FDE1A /* mapapi.bundle in Resources */ = {isa = PBXBuildFile; fileRef = 5D4540D81E06596E003FDE1A /* mapapi.bundle */; };
+		5D81CA0A1EB5AEF0000112D7 /* StationLederViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81C9FE1EB5AEF0000112D7 /* StationLederViewController.m */; };
+		5D81CA0B1EB5AEF0000112D7 /* StationLederViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D81C9FF1EB5AEF0000112D7 /* StationLederViewController.xib */; };
+		5D81CA0C1EB5AEF0000112D7 /* ZDMineTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81CA011EB5AEF0000112D7 /* ZDMineTableViewController.m */; };
+		5D81CA0D1EB5AEF0000112D7 /* ZDMineVC.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 5D81CA021EB5AEF0000112D7 /* ZDMineVC.storyboard */; };
+		5D81CA0E1EB5AEF0000112D7 /* ZDzhaoHuViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81CA041EB5AEF0000112D7 /* ZDzhaoHuViewController.m */; };
+		5D81CA0F1EB5AEF0000112D7 /* ZDzhaoHuViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D81CA051EB5AEF0000112D7 /* ZDzhaoHuViewController.xib */; };
+		5D81CA101EB5AEF0000112D7 /* zhanZhangController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81CA071EB5AEF0000112D7 /* zhanZhangController.m */; };
+		5D81CA111EB5AEF0000112D7 /* ZHStationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81CA091EB5AEF0000112D7 /* ZHStationViewController.m */; };
+		5D81CA161EB5AFC8000112D7 /* VolunteerForOldViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D81CA141EB5AFC8000112D7 /* VolunteerForOldViewController.m */; };
+		5D81CA171EB5AFC8000112D7 /* VolunteerForOldViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D81CA151EB5AFC8000112D7 /* VolunteerForOldViewController.xib */; };
 		5D8FC8141E0B6B3F001E196F /* SCpickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8FC8131E0B6B3F001E196F /* SCpickerViewController.m */; };
 		5D8FC8171E0B7187001E196F /* SCAreaPickerView.m in Sources */ = {isa = PBXBuildFile; fileRef = 5D8FC8161E0B7187001E196F /* SCAreaPickerView.m */; };
 		5D8FC8191E0B71A6001E196F /* SCAreaPickerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 5D8FC8181E0B71A6001E196F /* SCAreaPickerView.xib */; };
@@ -320,6 +330,22 @@
 		5D4540D61E06596E003FDE1A /* BaiduMapAPI_Search.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Search.framework; sourceTree = "<group>"; };
 		5D4540D71E06596E003FDE1A /* BaiduMapAPI_Utils.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = BaiduMapAPI_Utils.framework; sourceTree = "<group>"; };
 		5D4540D81E06596E003FDE1A /* mapapi.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = mapapi.bundle; sourceTree = "<group>"; };
+		5D81C9FD1EB5AEF0000112D7 /* StationLederViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationLederViewController.h; sourceTree = "<group>"; };
+		5D81C9FE1EB5AEF0000112D7 /* StationLederViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationLederViewController.m; sourceTree = "<group>"; };
+		5D81C9FF1EB5AEF0000112D7 /* StationLederViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = StationLederViewController.xib; sourceTree = "<group>"; };
+		5D81CA001EB5AEF0000112D7 /* ZDMineTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDMineTableViewController.h; sourceTree = "<group>"; };
+		5D81CA011EB5AEF0000112D7 /* ZDMineTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDMineTableViewController.m; sourceTree = "<group>"; };
+		5D81CA021EB5AEF0000112D7 /* ZDMineVC.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = ZDMineVC.storyboard; sourceTree = "<group>"; };
+		5D81CA031EB5AEF0000112D7 /* ZDzhaoHuViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDzhaoHuViewController.h; sourceTree = "<group>"; };
+		5D81CA041EB5AEF0000112D7 /* ZDzhaoHuViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDzhaoHuViewController.m; sourceTree = "<group>"; };
+		5D81CA051EB5AEF0000112D7 /* ZDzhaoHuViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDzhaoHuViewController.xib; sourceTree = "<group>"; };
+		5D81CA061EB5AEF0000112D7 /* zhanZhangController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = zhanZhangController.h; sourceTree = "<group>"; };
+		5D81CA071EB5AEF0000112D7 /* zhanZhangController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = zhanZhangController.m; sourceTree = "<group>"; };
+		5D81CA081EB5AEF0000112D7 /* ZHStationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZHStationViewController.h; sourceTree = "<group>"; };
+		5D81CA091EB5AEF0000112D7 /* ZHStationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZHStationViewController.m; sourceTree = "<group>"; };
+		5D81CA131EB5AFC8000112D7 /* VolunteerForOldViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VolunteerForOldViewController.h; sourceTree = "<group>"; };
+		5D81CA141EB5AFC8000112D7 /* VolunteerForOldViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VolunteerForOldViewController.m; sourceTree = "<group>"; };
+		5D81CA151EB5AFC8000112D7 /* VolunteerForOldViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = VolunteerForOldViewController.xib; sourceTree = "<group>"; };
 		5D8FC8121E0B6B3F001E196F /* SCpickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCpickerViewController.h; sourceTree = "<group>"; };
 		5D8FC8131E0B6B3F001E196F /* SCpickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SCpickerViewController.m; sourceTree = "<group>"; };
 		5D8FC8151E0B7187001E196F /* SCAreaPickerView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SCAreaPickerView.h; sourceTree = "<group>"; };
@@ -882,6 +908,37 @@
 			path = "地图";
 			sourceTree = "<group>";
 		};
+		5D81C9FC1EB5AD7E000112D7 /* 站点 */ = {
+			isa = PBXGroup;
+			children = (
+				5D81C9FD1EB5AEF0000112D7 /* StationLederViewController.h */,
+				5D81C9FE1EB5AEF0000112D7 /* StationLederViewController.m */,
+				5D81C9FF1EB5AEF0000112D7 /* StationLederViewController.xib */,
+				5D81CA001EB5AEF0000112D7 /* ZDMineTableViewController.h */,
+				5D81CA011EB5AEF0000112D7 /* ZDMineTableViewController.m */,
+				5D81CA021EB5AEF0000112D7 /* ZDMineVC.storyboard */,
+				5D81CA031EB5AEF0000112D7 /* ZDzhaoHuViewController.h */,
+				5D81CA041EB5AEF0000112D7 /* ZDzhaoHuViewController.m */,
+				5D81CA051EB5AEF0000112D7 /* ZDzhaoHuViewController.xib */,
+				5D81CA061EB5AEF0000112D7 /* zhanZhangController.h */,
+				5D81CA071EB5AEF0000112D7 /* zhanZhangController.m */,
+				5D81CA081EB5AEF0000112D7 /* ZHStationViewController.h */,
+				5D81CA091EB5AEF0000112D7 /* ZHStationViewController.m */,
+			);
+			name = "站点";
+			path = "BaoChunHui/站点";
+			sourceTree = SOURCE_ROOT;
+		};
+		5D81CA121EB5AF9B000112D7 /* 敬老志愿 */ = {
+			isa = PBXGroup;
+			children = (
+				5D81CA131EB5AFC8000112D7 /* VolunteerForOldViewController.h */,
+				5D81CA141EB5AFC8000112D7 /* VolunteerForOldViewController.m */,
+				5D81CA151EB5AFC8000112D7 /* VolunteerForOldViewController.xib */,
+			);
+			path = "敬老志愿";
+			sourceTree = "<group>";
+		};
 		5D8FC8481E0BEFAA001E196F /* zhaoHuViewModel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1214,8 +1271,10 @@
 				E45E831B1DDAE51700CC493B /* 启动页 */,
 				E45E82D91DDAD61900CC493B /* 报春晖 */,
 				E45E82EF1DDAD61900CC493B /* 老人 */,
+				5D81C9FC1EB5AD7E000112D7 /* 站点 */,
 				E45E82E41DDAD61900CC493B /* 家属 */,
 				E448F6AC1EB32E27006DE321 /* 服务机构端 */,
+				5D81CA121EB5AF9B000112D7 /* 敬老志愿 */,
 				E45E83101DDAD61900CC493B /* 照护师 */,
 				E448F6A31EB2D6B6006DE321 /* 志愿端 */,
 				E40A74F01DDB090F00A30B81 /* Category */,
@@ -2310,6 +2369,7 @@
 				E4520D761DE583610043C234 /* CardTableViewController.xib in Resources */,
 				E4548A951E0578E000878E23 /* DeliveryAddressViewController.xib in Resources */,
 				E4520DB41DE5B9520043C234 /* TencentOpenApi_IOS_Bundle.bundle in Resources */,
+				5D81CA171EB5AFC8000112D7 /* VolunteerForOldViewController.xib in Resources */,
 				E4089AE11DDC3A50005E7ED3 /* Nurse.storyboard in Resources */,
 				5D8FC8191E0B71A6001E196F /* SCAreaPickerView.xib in Resources */,
 				E4520DAE1DE5B9520043C234 /* ShareSDKUI.bundle in Resources */,
@@ -2320,12 +2380,15 @@
 				E4520DB81DE5B9520043C234 /* read_me.txt in Resources */,
 				E43FDBF51EA4BEAE00A55A81 /* MineTVC.storyboard in Resources */,
 				E4FAFCD81E03C9C900C2E945 /* goodsWithGuigeCell.xib in Resources */,
+				5D81CA0D1EB5AEF0000112D7 /* ZDMineVC.storyboard in Resources */,
+				5D81CA0F1EB5AEF0000112D7 /* ZDzhaoHuViewController.xib in Resources */,
 				E4127AA31DF5440100C20658 /* shopPingJiaCell.xib in Resources */,
 				E4AE1BCC1DE3E259002795BD /* LiveViewController.xib in Resources */,
 				E4520DAB1DE5B9520043C234 /* ShareSDKConfigFile.bundle in Resources */,
 				E448F6BF1EB339B3006DE321 /* adviceVC.xib in Resources */,
 				E44381DC1EB0875D00E2865A /* QiangDanCell.xib in Resources */,
 				E458F9151EA705D3000D8B2F /* shouQuanCell.xib in Resources */,
+				5D81CA0B1EB5AEF0000112D7 /* StationLederViewController.xib in Resources */,
 				E4520D7B1DE586DC0043C234 /* aboutViewController.xib in Resources */,
 				E4BF092E1DE2E2AB0075A746 /* LoginnViewController.xib in Resources */,
 				E46322171E6CFD8C00EB2D99 /* SMRZView.xib in Resources */,
@@ -2401,6 +2464,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5D81CA0A1EB5AEF0000112D7 /* StationLederViewController.m in Sources */,
+				5D81CA0E1EB5AEF0000112D7 /* ZDzhaoHuViewController.m in Sources */,
 				E4C2B3091DFBE0C400DB61A1 /* ConfirmOrderViewController.m in Sources */,
 				E448F6A81EB2D7BD006DE321 /* VolunteerCVC.m in Sources */,
 				E448F6BE1EB339B3006DE321 /* adviceVC.m in Sources */,
@@ -2409,6 +2474,7 @@
 				E448F6DD1EB36676006DE321 /* yanglaoTVC.m in Sources */,
 				E4501AFF1DE6C18C0015A79E /* scoreShopCell.m in Sources */,
 				E4520D751DE583610043C234 /* CardTableViewController.m in Sources */,
+				5D81CA101EB5AEF0000112D7 /* zhanZhangController.m in Sources */,
 				E40A74FF1DDB090F00A30B81 /* UIView+HUD.m in Sources */,
 				E412B51B1DEC61F1006EEFCF /* proviceModel.m in Sources */,
 				E4AE1C281DE4559A002795BD /* NurseTabBarViewController.m in Sources */,
@@ -2421,6 +2487,7 @@
 				E463220F1E6CFD3400EB2D99 /* ShiMingRenZhengVC.m in Sources */,
 				E445F3201DF7FE7D00377343 /* SearchModel.m in Sources */,
 				E44CF4591DDD84AC00783CDB /* speach.m in Sources */,
+				5D81CA111EB5AEF0000112D7 /* ZHStationViewController.m in Sources */,
 				E448F6E31EB36AEE006DE321 /* infoWebViewVC.m in Sources */,
 				5D30B7741EB0923A000FD215 /* Data.m in Sources */,
 				E4233B7B1DDAA1990023D3DC /* ViewController.m in Sources */,
@@ -2429,6 +2496,7 @@
 				E458F9061EA6FC7D000D8B2F /* settingTVC.m in Sources */,
 				E44ACBE21E0650D000426D8D /* searchTableViewCell.m in Sources */,
 				5D30B7771EB0923A000FD215 /* TianjiaAlertViewController.m in Sources */,
+				5D81CA161EB5AFC8000112D7 /* VolunteerForOldViewController.m in Sources */,
 				5D30B7471EB08B71000FD215 /* SCCommunityViewController.m in Sources */,
 				E40A75061DDB295100A30B81 /* AdNetWorking.m in Sources */,
 				E438318F1E9F152E0009BB09 /* JianKanggGuangBoVC.m in Sources */,
@@ -2455,6 +2523,7 @@
 				E431C2A01E0113D600F44EDC /* FenLeiViewModel.m in Sources */,
 				E4501B051DE6DA760015A79E /* scoreShopViewModel.m in Sources */,
 				E412B5181DEC04CF006EEFCF /* oldNetManager.m in Sources */,
+				5D81CA0C1EB5AEF0000112D7 /* ZDMineTableViewController.m in Sources */,
 				E44ACBD91E0650D000426D8D /* zuDaoModel.m in Sources */,
 				E448F6CE1EB35FA2006DE321 /* videoCell.m in Sources */,
 				5D30B7751EB0923A000FD215 /* MiShuViewController.m in Sources */,

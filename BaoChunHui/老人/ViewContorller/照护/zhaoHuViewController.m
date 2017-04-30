@@ -83,11 +83,12 @@
 }
 - (NSArray *)imageList{
     if (!_imageList) {
+        UIImage *s0 = [UIImage imageNamed:@"zhaoHuo"];
         UIImage *s1 = [UIImage imageNamed:@"showImage1"];
         UIImage *s2 = [UIImage imageNamed:@"showImage2"];
         UIImage *s3 = [UIImage imageNamed:@"showImage3"];
         UIImage *s4 = [UIImage imageNamed:@"showImage4"];
-        _imageList = @[s1,s2,s3,s4];
+        _imageList = @[s0,s1,s2,s3,s4];
     }
     return _imageList;
 }

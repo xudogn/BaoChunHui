@@ -15,7 +15,7 @@
 #import "FamilyTabBarViewController.h"
 #import "HelpButton.h"
 #import "FuWuJIGOUVC.h"
-
+#import "VolunteerForOldViewController.h"
 
 
 #import <AVFoundation/AVFoundation.h>
@@ -277,6 +277,9 @@
                 delegate.window.rootViewController = navi;
                 _window.rootViewController = navi;
             }
+                break;
+            case PsrtOf6:
+                _window.rootViewController = [[VolunteerForOldViewController alloc]init];
                 break;
             default:{
                 
